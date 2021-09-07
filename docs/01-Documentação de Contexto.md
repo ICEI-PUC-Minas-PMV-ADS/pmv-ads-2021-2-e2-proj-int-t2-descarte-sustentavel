@@ -5,6 +5,8 @@ Em tempos em que o consumismo humano tem batido recorde pode-se notar que a rela
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
 
 ## Problema
+Conforme exposto, o problema que se busca resolver com este projeto é a falta de informação sobre os locais de coleta de recicláveis e as dificuldades envolvidas no processo de descarte correto dos materiais.
+
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
 Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
@@ -18,6 +20,23 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
+
+
+O objetivo geral deste trabalho é a criação de solução tecnológica que assegure aos usuários a coleta de informação e agendamento para a retirada de material para reciclagem bem como a destinação adequada a postos de reciclagem observando o tipo de material a ser recolhido. 
+
+
+Como objetivos específicos, podemos ressaltar: 
+
+
+* Fornecer funcionalidades que permitam ao usuário criar um login para acessar plataforma e colher informação sobre descarte; 
+
+
+* Fornecer funcionalidades que permitam ao usuário agendamento para retirada de material para descarte; 
+
+
+* Fornecer funcionalidades que permitam ao usuário verificar pontos de coleta e descarte de materiais; 
+
+
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
 Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
@@ -27,6 +46,9 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
+
+Preservar o meio ambiente refere-se à proteção integral de uma área natural, envolvendo ações cautelosas afim de evitar perdas ou comprometimento de biodiversidade como um todo. Esta ferramenta tecnológica proporcionara ao usuário a destinação correta de materiais, otimizando o tempo e, principalmente, atendendo requisitos legais de modo que seu lixo terá destino correto e legal, do ponto de vista normativo. Adicionalmente, além de favorecer a geração de novos postos de trabalho e emprego a destinação ou simplesmente reciclagem reduz o quantitativo de resíduos enviados, indiscriminadamente, para aterros sanitários ou depósitos de lixo.  
+
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
 
 O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
@@ -35,6 +57,8 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
+
+Embora exista um público amplo que, inconscientemente, possa se beneficiar de soluções eficazes, nosso público alvo serão tanto as pessoas que desejam descartar itens recicláveis e/ou eletrônicos quanto aquelas que buscam divulgar espaços para recebimento desses materiais.  
 
 Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
 hierárquicas, etc.
