@@ -114,6 +114,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |INCLUSÃO| É necessário fazer o login na aplicação antes de realizar os casos de uso: “Solicitar Coleta de Materiais”, “Solicitar Descarte de Materiais” e “Realizar a baixa dos materiais coletados” |
 ||Para solicitar coleta de materiais é necessário que o banco de dados busque quais são os requisitos de coleta |
 ||Para solicitar descarte de materiais é necessário que o banco de dados busque quais são os requisitos de descarte | 
-|Extensão| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação |||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação |
+|Extensão| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação |
+||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação  |
 ||Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
 
