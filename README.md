@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMA`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Back-End 
 
-`SEMESTRE`
+`2º SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Amanda Menezes de Oliveira
+* Daiane Aparecida Rocha 
+* Daniella Rodrigues Oliveira 
+* Elena Menezes Braga Campos
+* Gabriel Teixeira Viana
+* Gustavo Costa 
 
 ## Orientador
 
-* Nome completo do professor 1
+* Rosilene Ribeiro da Mota
 
 ## Instruções de utilização
 
