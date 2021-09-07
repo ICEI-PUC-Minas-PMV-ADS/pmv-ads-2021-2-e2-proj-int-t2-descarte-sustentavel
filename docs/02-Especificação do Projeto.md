@@ -25,13 +25,13 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 | Clara Lima   |                                    |                |
 |--------------------|------------------------------------|----------------------------------------|
-|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 19 anos - **Ocupação:** Estudante   |Aplicativos:  Facebook, Instagram.|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/claralima.png)|**Idade:** 19 anos - **Ocupação:** Estudante.   |Aplicativos:  Facebook, Instagram.|
 |**Motivações:** Clara está organizando o depósito de sua casa e descobriu vários aparelhos eletrônicos guardados sem nenhuma utilidade:  câmera fotográfica, TV de tubo, aparelho de som e monitor de computador. Ela sabe que não pode descartar esses materiais no lixo comum e precisa saber como fazer o descarte correto desses materiais. |**Frustrações:** Clara, por ter seus próprios problemas, busca algum site que faça o descarte de materiais eletrônicos.|**Hobbies, História:** Clara terminou o ensino médio e está se preparando para entrar na faculdade, e com o tempo tão corrido, procura sempre processos que agilizem suas atividades.|
 
 | Flora Martins  |                                    |                |
 |--------------------|------------------------------------|----------------------------------------|
 |![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/floramartins.png)|**Idade:** 42 anos - **Ocupação:** Coordenadora de ONGs de preservação do meio ambiente. Viúva. Fundou o conselho de moradores do bairro. |Aplicativos:  Facebook, Whatsapp, LinkedIn, Instagram, Jornais.|
-|**Motivações:**  Entende a importância do descarte correto de resíduos recicláveis, se sentir importante com as transformações na comunidade. |**Frustrações:** C Falta de visibilidade do seu trabalho. Falta de apoio governamental.|**Hobbies, História:**Gosta de sair com os amigos nos finais de semana e tocar violão. Na quarentena teve que interromper os trabalhos das ONGs, ficando abatida e desmotivada.| 
+|**Motivações:**  Entende a importância do descarte correto de resíduos recicláveis, se sentir importante com as transformações na comunidade. |**Frustrações:** Falta de visibilidade do seu trabalho. Falta de apoio governamental.|**Hobbies, História:** Gosta de sair com os amigos nos finais de semana e tocar violão. Na quarentena teve que interromper os trabalhos das ONGs, ficando abatida e desmotivada.| 
 
 ## Histórias de Usuários
 
@@ -124,7 +124,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |INCLUSÃO| É necessário fazer o login na aplicação antes de realizar os casos de uso: “Solicitar Coleta de Materiais”, “Solicitar Descarte de Materiais” e “Realizar a baixa dos materiais coletados” |
 ||Para solicitar coleta de materiais é necessário que o banco de dados busque quais são os requisitos de coleta |
 ||Para solicitar descarte de materiais é necessário que o banco de dados busque quais são os requisitos de descarte | 
-|Extensão| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação |
+|EXTENSÃO| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação |
 ||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação  |
 ||Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
 
