@@ -104,7 +104,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |O usuário deve conseguir alterar a sua senha | A aplicação deve permitir ao usuário solicitar a coleta de materiais na sua residência| RF-003 |
 |Buscar requisitos de coleta |A aplicação deve buscar quais são os requisitos para que a coleta seja realizada diretamente na residência do usuário | RF-006 |
 |Solicitar Descarte de materiais | A aplicação deve permitir ao usuário solicitar a realização de descarte de materiais indo até um ecoponto selecionado | RF-003|
-|Buscar materiais possíveis de descarte | A aplicação deve buscar quais são os materiais permitidos para o descarte em no ecoponto selecionado pelo usuário Buscar materiais possíveis de descarte  RF-006 |
+|Buscar materiais possíveis de descarte | A aplicação deve buscar quais são os materiais permitidos para o descarte em no ecoponto selecionado pelo usuário Buscar materiais possíveis de descarte | RF-006 |
 |Visualizar os pontos de coleta mais próximos  | A aplicação deverá mostrar quais são os ecopontos que permitem a coleta/descarte mais próximos dele | RF-004| 
 |Acompanhar a solicitação de coleta | Em caso de coleta de materiais na residência, o usuário deve conseguir acompanhar o status da sua solicitação| RF-005 |
 |Realizar a baixa dos materiais coletados  | O Ecoponto deverá conseguir realizar a baixa nas solicitações de descarte e coleta informando que os materiais foram devidamente coletados  | RF-011|
@@ -112,9 +112,8 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |RELACIONAMENTO| DESCRIÇÃO                                            |
 |--|-------------------------------------------------------|
 |INCLUSÃO| É necessário fazer o login na aplicação antes de realizar os casos de uso: “Solicitar Coleta de Materiais”, “Solicitar Descarte de Materiais” e “Realizar a baixa dos materiais coletados” |
-          |Para solicitar coleta de materiais é necessário que o banco de dados busque quais são os requisitos de coleta |
-          |Para solicitar descarte de materiais é necessário que o banco de dados busque quais são os requisitos de descarte | 
-|Extensão| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação |
-         |Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação |
-         |Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
+|Para solicitar coleta de materiais é necessário que o banco de dados busque quais são os requisitos de coleta |
+|Para solicitar descarte de materiais é necessário que o banco de dados busque quais são os requisitos de descarte | 
+|Extensão| Caso o usuário ainda não tenha cadastro, será necessário fazê-lo antes de fazer login na aplicação ||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação |
+|Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
 
