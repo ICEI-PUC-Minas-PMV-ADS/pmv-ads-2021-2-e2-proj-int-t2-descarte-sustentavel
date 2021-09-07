@@ -8,11 +8,10 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-|**Nome: Juliana Souza**|
-|---------------------------------------------------------|
-|FOTO                                                     | Idade: 29 Ocupação: Desenvovedora de Softaware, Dona de Casa | Aplicativos: Facebook, Whatsapp, Instagram.|
-|Motivações: Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga. | Frustrações: Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.| Hobbie, História: Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha. |
-
+| Juliana Souza      |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/julianasouza.png)|**Idade:** 29 - **Ocupação:** Ocupação: Desenvovedora de Software, Dona de Casa |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Motivações:** Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga.  |**Frustrações:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Hobbies, História:** Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha.| 
 
 ## Histórias de Usuários
 
