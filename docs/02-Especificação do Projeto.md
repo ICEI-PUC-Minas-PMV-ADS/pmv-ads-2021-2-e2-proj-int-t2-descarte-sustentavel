@@ -13,6 +13,16 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 |![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/julianasouza.png)|**Idade:** 29 - **Ocupação:** Ocupação: Desenvovedora de Software, Dona de Casa |Aplicativos: Facebook, Whatsapp, Instagram.|
 |**Motivações:** Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga.  |**Frustrações:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Hobbies, História:** Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha.| 
 
+| Juliana Souza      |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/julianasouza.png)|**Idade:** 29 - **Ocupação:** Ocupação: Desenvovedora de Software, Dona de Casa |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Motivações:** Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga.  |**Frustrações:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Hobbies, História:** Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha.| 
+
+| Juliana Souza      |                                    |                |
+|--------------------|------------------------------------|----------------------------------------|
+|![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/julianasouza.png)|**Idade:** 29 - **Ocupação:** Ocupação: Desenvovedora de Software, Dona de Casa |Aplicativos: Facebook, Whatsapp, Instagram.|
+|**Motivações:** Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga.  |**Frustrações:** Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal.|**Hobbies, História:** Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha.| 
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -108,3 +118,4 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 ||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação  |
 ||Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
 
+![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/diagramadecasodeuso.png)
