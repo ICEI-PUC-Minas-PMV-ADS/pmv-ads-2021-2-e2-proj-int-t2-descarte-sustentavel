@@ -2,7 +2,7 @@
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMA`
 
-`Projeto: Desenvolvimento de Aplicação Web Back-End 
+`Projeto: Desenvolvimento de Aplicação Web Back-End` 
 
 `2º SEMESTRE`
 
