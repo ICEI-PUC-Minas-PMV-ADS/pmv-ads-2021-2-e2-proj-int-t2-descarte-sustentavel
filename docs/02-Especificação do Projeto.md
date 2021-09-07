@@ -50,7 +50,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID    |                             Descrição do Requisito                                                    | Prioridade |
 |------|-------------------------------------------------------------------------------------------------------|------------|
 |RF-001| A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha  | ALTA  | 
-|RF-002| O site deve conter um formulário de cadastro para novos usuários contendo a intenção de cadastro 
+|RF-002| O site deve conter um formulário de cadastro para novos usuários contendo a intenção de cadastro           | ALTA  | 
          desejado (Quero Descartar/ Desejo Recolher) e os dados conforme tipo de usuário.                           | MÉDIA |
 |RF-003| A aplicação deve permitir realizar cadastro de descarte ou solicitação de coleta de materiais.             | ALTA  | 
 |RF-004| A aplicação deverá permitir ao usuário verificar no mapa os pontos de coleta mais próximos                 | ALTA  |
