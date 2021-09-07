@@ -8,19 +8,25 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Nome: Juliana Souza 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+ 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+ 
+
+ 
+
+Idade: 29 Ocupação: Desenvolvedora de Software, Dona de Casa 
+
+Aplicativos: Facebook, Whatsapp, Instagram. 
+
+Motivações: Juliana tem problemas em relação a coleta de determinados resíduos recicláveis em sua residência, procurando assim algum site que informe a localização de lugares específicos para a descarga. 
+
+Frustrações: Por trabalhar durante quase todo dia, Juliana não consegue acompanhar horários regulares de coleta reciclável em seu bairro, tornando-se assim inviável faltar em seu trabalho para depositar o lixo em um local ideal. 
+
+Hobbie, História: Juliana sempre foi dedicada em relação a estudo/trabalho, encontrou sua paixão na tecnologia e durante sua faculdade unificou o trabalho ao seu dia-a-dia pois desde de jovem tinha o sonho de morar sozinha. 
+
+
 
 ## Histórias de Usuários
 
@@ -28,8 +34,23 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Clara Lima   |Preencher o formulário do pedido da coleta             |Para solicitar o pedido de coleta na residência                |
+|Juliana Viana       |Excluir pedidos de coleta criados                |Organizar pedidos já feitos |
+|Flora Martim     |Visualizar  pedidos em andamento               |Ter controle sob a demanda dos pedidos  |
+|Luciane Silva       |Visualizar informações e dados relevantes sobre sustentabilidade               |Para ter informação sobre um assunto relevante |
+|Juliana Viana       |Visualizar  os pontos de coleta mais próximos da minha casa              |Para facilitar o descarte de matérias recicláveis e matérias eletrônicos |
+|Clara Lima       |Descartar minha televisão de tubo antiga que parou de funcionar             |Dar o descarte adequado  para o lixo eletrônico e não ter substâncias tóxicas em lugares impróprios |
+|Clara Lima       |Descartar meus livros que já não uso mais             |Para desocupar o espaço em casa e enviar para o lugar apropriado |
+|Flora Martim      |Coletar materiais recicláveis                |Para diminuir o lixo no meio ambiente e dar a eles o local devido  |
+|João Marques       |Coletar materiais eletrônicos  |Para diminuir substâncias tóxicas no ambiente |
+|Vera Viana      | Saber como solicitar a coleta de materiais recicláveis                |Para o recolhimento dos materiais recicláveis  |
+|Juliana Viana     |Saber a data e a fonte da notícia de sustentabilidad  |Verificar a veracidade da informação apresentada  e disponibilizar  no aplicativo |
+|Clara Lima      |Saber a quantidade  de produto descartado               |Para o recebimento adequado  do material no ecoponto  |
+
+
+
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
