@@ -6,7 +6,7 @@
 
 `2º SEMESTRE`
 
-O referido projeto trata de uma ferramenta que possibilita resolver o problema da falta de informação sobre locais de coleta de recicláveis bem como o descarte correto destes materiais.
+O referido projeto trata de uma ferramenta que possibilita resolver o problema da falta de informação sobre locais de coleta de recicláveis e eletrônicos bem como o descarte e destinação correto destes materiais.
 
 ## Integrantes
 
