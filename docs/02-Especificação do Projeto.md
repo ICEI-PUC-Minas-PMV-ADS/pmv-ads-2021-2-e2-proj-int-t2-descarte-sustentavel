@@ -128,4 +128,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 ||Caso o usuário tenha esquecido sua senha, será necessário alterá-la antes de fazer login na aplicação  |
 ||Caso o usuário deseje saber onde descartar seus materiais, é possível visualizar os pontos de coleta mais próximos |
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/diagramadecasodeuso.png)
+### Representação Visual
+![Figura 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/DiagramaDeCasosDeUso.png)
+
+*Figura 1 – Diagrama de Casos de Uso* 
