@@ -65,7 +65,7 @@ O escopo funcional do projeto é definido por meio dos requisitos funcionais que
 |RF-002| O site deve conter um formulário de cadastro para novos usuários contendo a intenção de cadastro desejada (Quero Descartar/ Desejo Recolher) e os dados conforme tipo de usuário; | ALTA  | 
 |RF-003| A aplicação deve permitir realizar cadastro de descarte ou solicitação de coleta de materiais; | ALTA  | 
 |RF-004| A aplicação deverá permitir ao usuário verificar no mapa os pontos de coleta mais próximos; | ALTA | 
-|RF-005|A aplicação deverá permitir fazer o acompanhamento das suas solicitações de coleta; | MÉDIA | 
+|RF-005|A aplicação deverá permitir fazer o acompanhamento das solicitações de coleta; | MÉDIA | 
 |RF-006| A aplicação deve conter um conjunto de materiais predefinidos permitidos para coleta; | ALTA  | 
 |RF-007| A aplicação deverá permitir ao usuário indicar o peso aproximado do material a ser coletado em residência, com os pesos pré-estabelecidos pelo aplicativo; | MÉDIA | 
 |RF-008| A aplicação deverá permitir ao usuário visualizar uma lista de notícias e informações úteis na página inicial; | BAIXA | 
