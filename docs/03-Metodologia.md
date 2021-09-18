@@ -24,11 +24,11 @@ A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
 
-Para gestão do código fonte do software desenvolvido, o grupo utiliza um processo baseado no Git Flow, como mostra a Figura 1. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature.   
+Para gestão do código fonte do software desenvolvido, o grupo utiliza um processo baseado no Git Flow, como mostra a Figura 2. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature.   
 
-![Figura 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/gitFlow.png)
+![Figura 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/gitFlow.png)
 
-*Figura 1 – Fluxo de controle do código fonte no repositório git*  
+*Figura 2 – Fluxo de controle do código fonte no repositório git*  
 
 \
 O projeto segue a seguinte convenção para o nome de branches:
@@ -75,17 +75,17 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 * **In Progress**: representa as tarefas que estão em execução naquele momento; e 
 * **Done**: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.  
 
-Foi escolhido o quadro de kanban para o gerenciamento do projeto, com o sistema kanban é possível avaliar o progresso do trabalho da equipe, avaliar etapas posteriores, medir o tempo gasto em tarefas especificas e também promover a cooperação entre a equipe, tudo isso utilizando um sistema simples e visual. (AGUIAR, 2007). O quadro kanban do grupo no Github está disponível através da URL Doação (github.com) e é apresentado, no estado atual, na Figura 2:
+Foi escolhido o quadro de kanban para o gerenciamento do projeto, com o sistema kanban é possível avaliar o progresso do trabalho da equipe, avaliar etapas posteriores, medir o tempo gasto em tarefas especificas e também promover a cooperação entre a equipe, tudo isso utilizando um sistema simples e visual. (AGUIAR, 2007). O quadro kanban do grupo no Github está disponível através da URL Doação (github.com) e é apresentado, no estado atual, na Figura 3:
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/kanban.png)
-*Figura 2 – Tela do quadro kanban do Github criada pelo grupo*
+![Figura 3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/main/docs/img/kanban.png)
+*Figura 3 – Tela do quadro kanban do Github criada pelo grupo*
  
  \
- A tarefas são classificadas em função da natureza ou prioridade da atividade e seguem o um esquema de etiquetagem entre cores e categorias que pode ser visto pela Figura 3: 
+ A tarefas são classificadas em função da natureza ou prioridade da atividade e seguem o um esquema de etiquetagem entre cores e categorias que pode ser visto pela Figura 4: 
 
-![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/8b6516da3bbaf4c774d571c720d234acfd8f7845/docs/img/labels.png)
+![Figura 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/8b6516da3bbaf4c774d571c720d234acfd8f7845/docs/img/labels.png)
 
-*Figura 3 – Tela de etiquetas do quadro kanban no Github*
+*Figura 4 – Tela de etiquetas do quadro kanban no Github*
 
 ### Ferramentas
 
