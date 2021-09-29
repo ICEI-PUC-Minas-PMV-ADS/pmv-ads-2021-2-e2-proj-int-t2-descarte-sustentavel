@@ -4,7 +4,8 @@
 
 |Caso de Teste |CT-01 – Cadastro e Login do usuário |
 |--------------------|----------------------------------------------------------------------|
-|**Requisitos Associados** | RF-001 - A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha. RF-002 - O site deve conter um formulário de cadastro para novos usuários contendo a intenção de cadastro desejada (Quero Descartar/ Desejo Recolher) e os dados conforme tipo de usuário. |
+|**Requisitos Associados** | RF-001 - A página inicial da aplicação deve possibilitar ao usuário fazer login, se cadastrar ou alterar sua senha. 
+RF-002 - O site deve conter um formulário de cadastro para novos usuários contendo a intenção de cadastro desejada (Quero Descartar/ Desejo Recolher) e os dados conforme tipo de usuário. |
 |**Entrada** | Cadastro: Após preencher o email, senha, telefone. Login: Após preencher o email e senha. |
 |**Objetivo do Teste** | Permitir que o usuário acesse a plataforma através do login e cadastro. Permitir o cadastro do usuário que quer descartar e o que deseja recolher o material.  |
 |**Passos** | 1) Acessar o Navegador  2) Informar o endereço do Site  3) Clicar no botão Cadastre-se  4) Preencher os campos com informações validas 5) Clicar no botão Cadastrar. |
