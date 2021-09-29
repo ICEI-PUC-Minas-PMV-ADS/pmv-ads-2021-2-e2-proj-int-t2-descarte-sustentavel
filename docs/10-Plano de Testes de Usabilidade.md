@@ -15,8 +15,8 @@ Para cada tarefa do participante é possível medir:
 |--------------------|----------------------------------------------------|
 | **Preparação** | Definir tarefas para os participantes executarem. Definir o perfil dos participantes. |
 | **Coleta de dados** | Registrar a performance e a opinião dos participantes. |
-| **Consolidação dos resultados** | Reunir, contabilizar e sumarizar os dados coletados dos participantes |
-| **Relato dos resultados** | Relatar a performance e a opinião dos participantes |
+| **Consolidação dos resultados** | Reunir, contabilizar e sumarizar os dados coletados dos participantes. |
+| **Relato dos resultados** | Relatar a performance e a opinião dos participantes. |
 
 
 ### __Objetivo__
