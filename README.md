@@ -6,7 +6,7 @@
 
 `2º SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O referido projeto trata de uma ferramenta que possibilita resolver o problema da falta de informação sobre locais de coleta de recicláveis e eletrônicos bem como o descarte e destinação correto destes materiais.
 
 ## Integrantes
 
