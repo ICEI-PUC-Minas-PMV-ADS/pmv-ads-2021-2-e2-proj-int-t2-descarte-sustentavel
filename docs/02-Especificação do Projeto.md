@@ -81,7 +81,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |-------|-------------------------|----|
 |RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku); | ALTA| 
 |RNF-002| A aplicação deverá ser responsiva, permitindo a visualização em um celular de forma adequada;  | ALTA | 
-|RNF-003| DA aplicação deve ser intuitiva, de fácil utilização e entendimento, descartando a necessidade de treinamentos; |  MÉDIA | 
+|RNF-003| A aplicação deve ser intuitiva, de fácil utilização e entendimento, descartando a necessidade de treinamentos; |  MÉDIA | 
 |RNF-004| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge);  |  ALTA | 
 |RNF-005| A aplicação deve possuir uma interface limpa, com visualização voltada apenas para as necessidades do usuário no momento, também como forma de melhorar a performance e o desempenho. |  MÉDIA | 
 
