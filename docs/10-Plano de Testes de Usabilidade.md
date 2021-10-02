@@ -13,12 +13,12 @@ Para cada tarefa do participante é possível medir:
 
 ### __Roteiro__ 
 
-| **Tarefa 1** | **Critério de Êxito** | **O que será avaliado**|
+| **Tarefa 1** | **Critério de Êxito** | **O que será avaliado** |
 |--------------|-----------------------|-------------------------|
 |Cadastro de novo usuário. | Concluir o cadastro, considerando a mensagem "Cadastro realizado com sucesso". | Concretização da tarefa. Quantidade de erros cometidos. Tempo necessario para se concluir. |
 
 | **Tarefa 2** | **Critério de Êxito** | **O que será avaliado** |
-|--------------|----------------|------------|
+|--------------|-----------------------|-------------------------|
 |Logar no sistema. | Conseguir logar no sistema e ser encaminhado para a página de cadastro. | Concretização da tarefa. Quantidade de erros cometidos. |
 
 | **Tarefa 3** | **Critério de Êxito** | **O que será avaliado** |
