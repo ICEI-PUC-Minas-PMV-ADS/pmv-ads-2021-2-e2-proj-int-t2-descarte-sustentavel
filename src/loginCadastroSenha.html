@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/gsdk-bootstrap-wizard.css" rel="stylesheet" />
+
+
+    <link href="assets/css/login.css" rel="stylesheet" />
+    <script type="text/javascript" src="assets/js/login.js"></script>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+    <div class="container-fluid">
+        <div class="action">
+            <div class="profile" onclick="menuToggle();">
+                <img src="assets/img/profile_icon (1).svg">
+            </div>
+            <div class="menu">
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <!--      Wizard container        -->
+                        <div class="wizard-container">
+
+                            <div class="card wizard-card" data-color="orange" id="wizardProfile">
+                                <form name="formuser" action="enviar.js" method="post">
+                                    <div style="visibility:hidden;">
+                                        <!--esconde a div-->
+                                        <div class="wizard-navigation">
+                                            <ul>
+                                                <li>
+                                                    <a href="#logins" data-toggle="tab"></a>
+                                                </li>
+                                                <li><a href="#cadastro" data-toggle="tab">1</a></li>
+                                                <li><a href="#cadastrosenha" data-toggle="tab">2</a></li>
+                                                <li><a href="#cadastrosenhadois" data-toggle="tab">3</a></li>
+                                                <li>
+                                                    <a href="#fimcadastro" data-toggle="tab"></a>4</li>
+                                                <li><a href="#recuperarsenhaa" data-toggle="tab">5</a></li>
+                                                <li><a href="#recuperarsenha" data-toggle="tab">6</a></li>
+                                                <li><a href="#recuperarsenhab" data-toggle="tab">7</a></li>
+                                                <li><a href="#recuperarsenhac" data-toggle="tab">8</a></li>
+                                                <li><a href="#recuperarsenhad" data-toggle="tab">9</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <!--Pagina de login começo-->
+                                        <div class="tab-pane" id="logins">
+                                            <div>
+                                                <h3>
+                                                    <b>LOGIN</b><br>
+                                                    <small>Por favor, faça seu login.</small>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <input name="email" pattern="[a-zA-ZO-9]+" type="text" class="form-control" placeholder="Insira seu email ou CPF/CNPJ" required maxlength="25" minlength="2">
+                                                        <small id="erro-email" class="vermelho"></small>
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <input name="senha" type="password" class="form-control" placeholder="Digite aqui sua senha" required maxlength="25" minlength="2">
+                                                    </div>
+                                                    <div class="col-sm-6" id="escolha">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                                                            <label class="form-check-label" for="inlineRadio1">Descartador</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6" id="escolha">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                                                            <label class="form-check-label" for="inlineRadio2">Ecoponto</label>
+                                                        </div>
+                                                    </div>
+                                                    <p>
+                                                        <a id="senha" href="#recuperarsenhaa" data-toggle="tab">Esqueceu sua senha?</a>
+
+                                                        <button onclick="cadastro()" class="btn " id="class" value="cadastrar">Entrar</button>
+                                                    </p>
+                                                    <p class="link">
+                                                        <a id="btnn" href="#cadastro" data-toggle="tab">Não tem conta? Cadastre-se</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--fim login-->
+                                        <!--Começo Cadastro-->
+                                        <div class="tab-pane" id="cadastro">
+                                            <div>
+                                                <h3>
+                                                    <b>CADASTRE-SE</b><br><br>
+                                                    <small>Como deseja se cadastrar?</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div id="login">
+                                                        <div class="col-sm-4" id="cadastrese">
+                                                            <img src="assets/img/descartador_icon (1).svg">
+                                                        </div>
+                                                        <div class="col-sm-4" id="cadastrese">
+                                                            <img src="assets/img/ecoponto_icon.svg">
+                                                        </div>
+                                                        <div class="col-sm-6" id="escolha">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                                                                <label class="form-check-label" for="inlineRadio1">Descartador</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6" id="escolha">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                                                                <label class="form-check-label" for="inlineRadio2">Ecoponto</label>
+                                                            </div>
+                                                        </div>
+                                                        <p>
+                                                            <input type='button' onclick="cadastrar()" class='btn btn-next ' value='Next' Próximo/>
+                                                        </p>
+                                                        <p class="link">
+                                                            <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                        </p>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fim cadastro-->
+                                        <!--Começo pagina 2 cadastro-->
+                                        <div class="tab-pane" id="cadastrosenha">
+                                            <div>
+                                                <h3>
+                                                    <b>CADASTRE-SE</b><br><br>
+                                                    <small>Nos conte um pouco sobre você:</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+
+                                                    <div class="form-group">
+                                                        <input name="nome" type="text" class="form-control" placeholder="Insira seu nome completo" required maxlength="25" minlength="2">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email" required maxlength="25" minlength="2">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="cpfOuCnpj" type="text" class="form-control" placeholder="Insira seu CPF/CNPJ" required maxlength="25" minlength="2">
+                                                    </div>
+
+                                                    <p>
+                                                        <input type='button' class='btn btn-next ' value='Próximo' />
+                                                    </p>
+                                                    <p class="link">
+                                                        <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fim pagina 2 cadastro-->
+                                        <!--Começo pagina 3 cadastro-->
+                                        <div class="tab-pane" id="cadastrosenhadois">
+                                            <div>
+                                                <h3>
+                                                    <b>CADASTRE-SE</b><br><br>
+                                                    <small>Quase lá! Agora vamos criar uma senha:</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+
+                                                    <div class="form-group">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="senha" type="password" class="form-control" placeholder="Insira sua senha" required maxlength="25" minlength="2">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="senha" type="password" class="form-control" placeholder="Confirme a senha" required maxlength="25" minlength="2">
+                                                    </div>
+                                                    <div class="form-check" id="lembrar">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                              Lembrar-se de mim
+                                                            </label>
+                                                    </div>
+                                                    <p>
+                                                        <input type='button' class='btn btn-next ' value='Próximo' />
+                                                    </p>
+                                                    <p class="link">
+                                                        <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fim pagina 3 cadastro-->
+                                        <!--Pagina 4 cadastro -->
+                                        <div class="tab-pane" id="fimcadastro">
+                                            <div>
+                                                <h3>
+                                                    <b>CADASTRO CONCLUIDO :)</b>
+                                                    <small>Seja muito bem vindo!</small>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <img id="img" src="assets/img/verifica.png">
+                                                    <p class="link">
+                                                        <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Fim pagina 4 cadastro-->
+                                        <!--Começo recuperar senha -->
+                                        <div class="tab-pane" id="recuperarsenhaa">
+                                            <div>
+                                                <h3 id="h3">
+                                                    <b>RECUPERAR SENHA</b><br><br>
+                                                    <small id="small">Forneça o email da conta que deseja recuperar</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email ou CPF/CNPJ">
+                                                    </div>
+                                                    <p>
+                                                        <p class="link" id="btn">
+
+                                                            <a id="proximo" href="#recuperarsenha" data-toggle="tab">próximo</a>
+                                                        </p>
+                                                        <p class="link">
+                                                            <a id="bt" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                        </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Recuperar senha2-->
+                                        <div class="tab-pane" id="recuperarsenha">
+                                            <div>
+                                                <h3>
+                                                    <b>RECUPERAR SENHA</b><br><br>
+                                                    <small>Como prefere receber o código para reset da senha?</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <input name="email" type="email" class="form-control" placeholder="Email para *****souza@outlook.com">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input name="sms" type="text" class="form-control" placeholder="SMS para ** ****-4592">
+                                                    </div>
+                                                    <p>
+                                                        <p class="link" id="btn">
+                                                            <a id="proximo" href="#recuperarsenhab" data-toggle="tab">próximo</a>
+                                                        </p>
+                                                        <p class="link">
+                                                            <a id="bt" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                        </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Recuperar senha 3-->
+                                        <div class="tab-pane" id="recuperarsenhab">
+                                            <div>
+                                                <h3>
+                                                    <b>CÓDIGO DE RECUPERAÇÃO</b><br><br>
+                                                    <small>Digite o código recebido:</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email">
+                                                    </div>
+                                                    <p>
+                                                        <p class="link" id="btn">
+                                                            <a id="btnn" href="#recuperarsenhac" data-toggle="tab">próximo</a>
+                                                        </p>
+                                                        <p class="link">
+                                                            <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                        </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Recuperar senha 4-->
+                                        <div class="tab-pane" id="recuperarsenhac">
+                                            <div>
+                                                <h3>
+                                                    <b>NOVA SENHA</b><br><br>
+                                                    <small>Hora de criar sua nova senha:</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group">
+                                                        <input type="password" placeholder="Senha" class="form-control" id="password" placeholder="Insira sua nova senha" required>
+                                                        <small id="erro-password" class="vermelho"></small>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="password" placeholder="Confirme Senha" class="form-control" id="confirm_password" required>
+                                                        <small id="erro-email" class="vermelho"></small>
+                                                    </div>
+                                                    <div class="alert alert-dange" hidden id="senhas-diferente">
+                                                        Senhas não correspondem!
+                                                    </div>
+                                                    <p>
+                                                        <button onclick="cadastro()" class="btn " id="class" value="cadastrar">Alterar Senha</button>
+                                                        <p class="link" id="btn">
+                                                            <a id="bt" href="#recuperarsenhad" data-toggle="tab">próximo</a>
+                                                        </p>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Recuperar senha 5-->
+                                        <div class="tab-pane" id="recuperarsenhad">
+                                            <div>
+                                                <h3>
+                                                    <b>CADASTRO CONCLUIDO :)</b><br><br>
+                                                    <small>Pronto para fazer login?</small><br>
+                                                </h3>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <img id="img" src="assets/img/verifica.png">
+                                                    <p class="link">
+                                                        <a id="btnn" href="#logins" data-toggle="tab">Fazer Login</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+<!--  Plugin Wizard -->
+<script src="assets/js/gsdk-bootstrap-wizard.js"></script>
+
+<!-- jquery.validate  -->
+<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>
