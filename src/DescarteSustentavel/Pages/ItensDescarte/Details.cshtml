@@ -1,0 +1,31 @@
+﻿@page
+@model DescarteSustentavel.Pages.ItensDescarte.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ItemDescarte</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ItemDescarte.tipoDoItem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ItemDescarte.tipoDoItem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ItemDescarte.descricaoDoItem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ItemDescarte.descricaoDoItem)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ItemDescarte.IDItem">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

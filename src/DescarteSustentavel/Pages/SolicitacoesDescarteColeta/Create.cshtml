@@ -1,0 +1,59 @@
+﻿@page
+@model DescarteSustentavel.Pages.SolicitacoesDescarteColeta.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SolicitacaoDescarteColeta</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.IDDescartador" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.IDDescartador" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.IDDescartador" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.IDEcoponto" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.IDEcoponto" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.IDEcoponto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.DataDaSolicitacao" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.DataDaSolicitacao" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.DataDaSolicitacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.QtdeDeItens" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.QtdeDeItens" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.QtdeDeItens" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SolicitacaoDescarteColeta.DataDeEncerramento" class="control-label"></label>
+                <input asp-for="SolicitacaoDescarteColeta.DataDeEncerramento" class="form-control" />
+                <span asp-validation-for="SolicitacaoDescarteColeta.DataDeEncerramento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
