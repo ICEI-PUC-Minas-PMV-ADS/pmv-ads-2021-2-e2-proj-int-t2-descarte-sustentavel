@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+form {
+    display: flex;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 0;
+}
+
+.titulo_cadastrar_solicitacao {
+    display: inline-flex;
+    justify-items: left;
+    align-items: center;
+}
+
+.titulo_cadastrar_solicitacao>img {
+    padding-right: 25px;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-style: medium;
+    font-size: 30px;
+    color: #393939;
+    padding: 50px 0 50px 0;
+}
+ h5{
+    font-size: 25px;
+    margin-top: 10px;
+ }
+
+#corpo_formulario_cadastro_solicitacao {
+
+}
+
+#formulario_geral{
+    width: 100%;
+    border: solid #d8d8d8 2px;
+    border-radius: 6px;
+    margin-top: auto;
+    margin-left: 0;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.form-label, p {
+    font-family: 'Rubik', sans-serif;
+    font-style: medium;
+    font-size: 18px;
+    color: #333333;
+}
+
+#container_buttons{
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+.botao_limpar{
+    padding: 3px 100px;
+    border: 1px solid aqua;
+    border-radius: 8px;
+    color: aqua;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: aqua;
+    border: 1px solid aqua;
+    transition: 0.7s;
+}
+
+.botao_enviar{
+    padding: 3px 100px;
+    border: aqua;
+    border-radius: 8px;
+    background-color: aqua;
+    color: white;
+}
+
+input[type="reset"]:hover{
+    background-color: aqua;
+    color: white;
+    border: 1px solid aqua;
+    transition: 0.7s;
+}
+
+input{
+    height: 50px;
+}
+
+.dropdown{
+    height: 50px;
+}
+
+#tipo_item{
+    height: 50px;
+}
+
+.button_buscar_ecoponto{
+    width: 10000px;
+}
+
+.btn-primary{
+    padding: 5px;
+    height: 50px;
+    margin-top: 3.6em;
+}

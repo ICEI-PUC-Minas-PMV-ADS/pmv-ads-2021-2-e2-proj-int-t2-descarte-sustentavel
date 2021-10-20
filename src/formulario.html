@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title></title>
+</head>
+
+<body>
+    <div class="flex-container">
+
+        <div class="titulo_cadastrar_solicitacao">
+            <img src="cadastrarsolicitacao_icon.svg" width="70vw" height="70vh" alt="">
+            <h1 id="titulo">Cadastrar Nova Solicitação</h1>
+        </div>
+
+        <div id="formulario_geral">
+        <form action="" id="corpo_formulario_cadastro_solicitacao" class="col-12 row g-4 needs-validation">
+
+            <div id="sessao_informacoes_gerais">
+                <h5>Informações Gerais</h5>
+            </div>
+
+            <div class="campo col-md-4">
+                <label class="form-label">Numero da Solicitação</label>
+                <input type="text" name="nome" id="numeroSolicitacao" class="form-control" placeholder="001" disabled
+                    required onkeypress="return onlynumber()">
+            </div>
+
+            <div class="col-md-8">
+                <label class="form-label">Descartador</label>
+                <input type="text" name="descartador" id="descartador" class="form-control"
+                    placeholder="300.300.300-30 - GABRIEL VIANA" disabled required>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Tipo de Material</label>
+                <select id="tipo_material" class="form-select dropdown" required>
+                    <option id="tipo_item_1" selected disabled value="">Selecione</option>
+                    <option id="tipo_item_1">Descartável</option>
+                    <option id="tipo_item_1">Eletrônico</option>
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label">Qtd de Itens</label>
+                <input type="number" min="1" max="8" id="qtd_itens" class="form-control" value="0" disabled required>
+            </div>
+
+            <div id="subtitulo_adicionar_item">
+                <h5>Adicionar Itens</h5>
+            </div>
+
+            <form action="" id="formulario_adicionar_itens" name="formulario_adicionar_itens">
+                <div class="col-md-3">
+                    <label class="form-label">Tipo de item</label>
+                    <select id="tipo_item" class="form-select" required>
+                        <option id="" selected disabled value="">Selecione</option>
+                        <option id="tipo_item_1">Plastico</option>
+                        <option id="tipo_item_2">Metal</option>
+                        <option id="tipo_item_3">Vidro</option>
+                        <option id="tipo_item_4">Papelão</option>
+                        <option id="tipo_item_5">Organicos</option>
+                        <option id="tipo_item_6">Hospitalar</option>
+                    </select>
+                </div>
+    
+                <div class="col-md-7">
+                    <label class="form-label">Descrição do Item</label>
+                    <input type="text" name="" id="item_descricao" class="form-control" required>
+                    <i class="bi bi-plus-square"></i>
+                </div>
+    
+                <div class="col-md-1" id="button_adicionar_item">
+                    <button type="button" class="btn" style="background-color: #00a4ff; margin-top: 35px; height: 50px; width: 50px;"onclick="limparCampos();
+                    ">
+                        <img src="/plus_icon.svg" alt="plus_icon" >
+                    </button>
+                </div>
+            </form>
+
+            <br>
+
+            <table class="table table-striped" id="tabela_itens">
+                <thead>
+                    <tr>
+                        <th scope="col">Nº Item</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela_itens_body">                    
+                </tbody>
+            </table>
+
+            <br>
+
+            <h5>Informações de Entrega</h5>
+            
+
+            <div class="col-md-9">
+                <label class="form-label">Ecoponto de Destino</label>
+                <div style="display: flex; align-items: center;">
+                    <input type="text" id="destino" class="form-control" required>
+                    <a type="button" class="btn btn-primary col-md-3" style="margin: 0 0 0 25px; display: flex; align-items: center; color: white; font-family: 'Rubik', sans-serif; font-size: 1.1em; font-weight: normal; background-color: #00A4FF; border-radius: 8px; border: none; display: flex; flex-wrap: nowrap; align-content: center; justify-content: center;">
+                        <p style="margin-bottom: 0; color: white">Buscar Ecoponto</p>                
+                        <img src="lupa.svg" alt="" style="margin: 0 15px; padding: 0;">
+                    </a>
+        
+                </div>
+            </div>
+
+            <!-- <button href="" class="btn btn-primary col-md-3" height="70px">Buscar Ecopontos
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button> -->
+
+            <div class="col-md-4" id="teste">
+                <label class="form-label">Tipo de Solicitação</label>
+                <select id="tipo_material" class="form-select dropdown" required>
+                    <option id="tipo_item_1" selected disabled value="">Selecione</option>
+                    <option id="tipo_item_1">Descarte</option>
+                    <option id="tipo_item_1">Coleta</option>
+                </select>
+            </div>
+
+            <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker col-md-3" inline="true">
+                <label for="example" class="form-label">Agende seu Descarte</label>
+                <input placeholder="Select date" type="date" id="example" class="form-control">
+                <i class="fas fa-calendar input-prefix"></i>
+            </div>
+
+        </form>
+    </div>
+
+        <div id="container_buttons">
+            <input class="botao_limpar" type="reset" value="Limpar" form="corpo_formulario_cadastro_solicitacao">
+            <input class="botao_enviar" type="submit" value="Enviar" form="corpo_formulario_cadastro_solicitacao">
+        </div>
+
+    </div>
+</body>
+
+<!-- <script src="script.js"> -->
+<script>
+
+    var id = 1;
+
+    $("#button_adicionar_item").click(function (event) {
+        criarLinhaGridItens()
+        id++;
+    })
+
+    function criarLinhaGridItens() {        
+        var tipoItem = document.getElementById("tipo_item").value
+        var descItem = document.getElementById("item_descricao").value
+
+        $("#tabela_itens_body").append(`<tr><th scope="row">${id}</th><td>${tipoItem}</td><td>${descItem}</td></tr>`)
+    
+        
+        //var qtdItens = document.getElementById("qtd_itens").innerHTML(`${id}`)
+        //$("#qtd_itens").value = id;
+        id++
+    }
+
+</script>
+
+</html>
