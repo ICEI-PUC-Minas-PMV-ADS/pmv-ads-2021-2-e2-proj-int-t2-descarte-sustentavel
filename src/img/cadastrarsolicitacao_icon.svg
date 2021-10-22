@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.331" height="52.998" viewBox="0 0 48.331 52.998">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffb9"/>
+      <stop offset="1" stop-color="#00a4ff"/>
+    </linearGradient>
+  </defs>
+  <g id="cadastrarsolicitacao_icon" transform="translate(-84.249 -126.262)">
+    <g id="Grupo_22519" data-name="Grupo 22519" transform="translate(84 126.261)">
+      <g id="Grupo_22518" data-name="Grupo 22518">
+        <g id="Grupo_22517" data-name="Grupo 22517">
+          <path id="Subtração_20" data-name="Subtração 20" d="M39,53H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0H39a2,2,0,0,1,2,2V22.756l-6,10.482H5.348v1.8H33.966l-2.059,3.594H5.348v1.8h25.53l-.2.348-.226,3.244H5.348v1.8H30.327l-.037.527.48.3,1.218-.832h4.554v-1.8H34.62l.752-.513L41,33.681V51A2,2,0,0,1,39,53ZM5.348,27.849v1.8H36.543v-1.8Zm0-5.39v1.8H36.543v-1.8ZM20.5,17.069v1.8H36.543v-1.8ZM5.348,6.29V18.866H16.934V6.29ZM20.5,11.679v1.8H36.543v-1.8Zm0-5.389v1.8H36.543V6.29Z" transform="translate(0.249 -0.001)" fill="url(#linear-gradient)"/>
+          <path id="União_15" data-name="União 15" d="M0,27.51H3.593L1.8,31.441Zm0,0V2.949H3.593V27.51ZM0,1.966V0H3.593V1.966Z" transform="translate(45.469 17.368) rotate(30)" fill="#006dff"/>
+        </g>
+      </g>
+      <path id="Caminho_11014" data-name="Caminho 11014" d="M0,0H8.085V8.983H0Z" transform="translate(7.186 8.086)" fill="#006dff"/>
+    </g>
+  </g>
+</svg>
