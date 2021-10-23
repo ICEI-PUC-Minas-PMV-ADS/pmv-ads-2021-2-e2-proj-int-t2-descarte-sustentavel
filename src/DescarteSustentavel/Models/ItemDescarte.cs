@@ -11,13 +11,17 @@ namespace DescarteSustentavel.Models
         [Key]
         public int IDItem { get; set; }
 
-        [StringLength(15, MinimumLength = 3)]
-        [Required]
+        [StringLength(15, MinimumLength = 3), Display(Name = "Tipo do Item"), Required]
         public string tipoDoItem { get; set; }
 
-        [StringLength(15, MinimumLength = 3)]
-        [Required]
+        [StringLength(15, MinimumLength = 3), Display(Name = "Descrição do Item"), Required]
         public string descricaoDoItem { get; set; }
 
+        public ItemDescarte(int iDItem, string tipoDoItem, string descricaoDoItem)
+        {
+            IDItem = iDItem;
+            this.tipoDoItem = tipoDoItem;
+            this.descricaoDoItem = descricaoDoItem;
+        }
     }
 }

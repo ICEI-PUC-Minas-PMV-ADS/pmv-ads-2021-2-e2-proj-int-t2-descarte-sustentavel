@@ -1,9 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-var id = 1;
+﻿var id = 1;
 
 $("#button_adicionar_item").click(function (event) {
     criarLinhaGridItens()
