@@ -61,7 +61,7 @@
         <form action="" id="corpo_formulario_cadastro_solicitacao" class="col-12 row g-4 needs-validation">
 
             <div id="sessao_informacoes_gerais">
-                <h5 class="col-12">Informações Gerais</h5>
+                <h5 class="col-12" style="margin-top: 30px">Informações Gerais</h5>
                 <br />
                 <div class="campo col-md-4 form-group">
                     <label class="form-label control-label">Numero da Solicitação</label>
@@ -75,9 +75,9 @@
                            placeholder="300.300.300-30 - GABRIEL VIANA" disabled required>
                 </div>
 
-                <div class="col-md-4">
-                    <label class="form-label">Tipo de Material</label>
-                    <select id="tipo_material" class="form-select dropdown" required>
+                <div class="col-3">
+                    <label class="form-label col-8" style="padding-left: 0">Tipo de Material</label>
+                    <select id="tipo_material" class="form-select dropdown col-12" style="height:38px; border-radius: 4px" required>
                         <option id="tipo_item_1" selected disabled value="">Selecione</option>
                         <option id="tipo_item_1">Descartável</option>
                         <option id="tipo_item_1">Eletrônico</option>
@@ -93,12 +93,12 @@
 
 
             <div id="sessao_adicionar_itens">
-                <h5 class="col-12">Adicionar Itens</h5>
+                <h5 class="col-12" style="margin-top: 50px">Adicionar Itens</h5>
 
                 <form action="" id="formulario_adicionar_itens" name="formulario_adicionar_itens">
                     <div class="col-md-3">
                         <label class="form-label">Tipo de item</label>
-                        <select id="tipo_item" class="form-select" required>
+                        <select id="tipo_item" class="form-select col-12" style="height:38px; border-radius: 4px" required>
                             <option id="" selected disabled value="">Selecione</option>
                             <option id="tipo_item_1">Plastico</option>
                             <option id="tipo_item_2">Metal</option>
@@ -116,16 +116,14 @@
                     </div>
 
                     <div class="col-md-1" id="button_adicionar_item">
-                        <button type="button" class="btn" style="background-color: #00a4ff; margin-top: 35px; height: 50px; width: 50px;" ;">
+                        <button type="button" class="btn" style="background-color: #00a4ff; margin-top: 35px; height: 40px; width: 40px;" ;">
                             <img src="/plus_icon.svg" alt="plus_icon">
                         </button>
                     </div>
                 </form>
             </div>
 
-            <br>
-
-            <table class="table table-striped" id="tabela_itens">
+            <table class="table table-striped" id="tabela_itens" style="margin:30px 15px; width:95%">
                 <thead>
                     <tr>
                         <th scope="col">Nº Item</th>
@@ -137,11 +135,8 @@
                 </tbody>
             </table>
 
-            <br>
-
             <div id="sessao_informacoes_entrega">
-                <h5>Informações de Entrega</h5>
-
+                <h5 class="col-12">Informações de Entrega</h5>
 
                 <div class="col-md-9">
                     <label class="form-label">Ecoponto de Destino</label>
@@ -149,7 +144,7 @@
                         <input type="text" id="destino" class="form-control" required>
                         <a type="button" class="btn btn-primary col-md-3" style="margin: 0 0 0 25px; display: flex; align-items: center; color: white; font-family: 'Rubik', sans-serif; font-size: 1.1em; font-weight: normal; background-color: #00A4FF; border-radius: 8px; border: none; display: flex; flex-wrap: nowrap; align-content: center; justify-content: center;">
                             <p style="margin-bottom: 0; color: white">Buscar Ecoponto</p>
-                            <img src="lupa.svg" alt="" style="margin: 0 15px; padding: 0;">
+                            <img src="" alt="" style="margin: 0 15px; padding: 0;">
                         </a>
 
                     </div>
@@ -164,7 +159,7 @@
 
                 <div class="col-md-4" id="teste">
                     <label class="form-label">Tipo de Solicitação</label>
-                    <select id="tipo_material" class="form-select dropdown" required>
+                    <select id="tipo_material" class="form-select dropdown col-12" style="height:38px; border-radius: 4px" required>
                         <option id="tipo_item_1" selected disabled value="">Selecione</option>
                         <option id="tipo_item_1">Descarte</option>
                         <option id="tipo_item_1">Coleta</option>
