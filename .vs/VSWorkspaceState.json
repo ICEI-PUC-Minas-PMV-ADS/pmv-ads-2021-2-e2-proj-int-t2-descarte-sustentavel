@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\docs",
-    "\\src"
+    "\\src",
+    "\\src\\DescarteSustentavel",
+    "\\src\\DescarteSustentavel\\Pages",
+    "\\src\\DescarteSustentavel\\Pages\\SolicitacoesDescarteColeta"
   ],
+  "SelectedNode": "\\src\\DescarteSustentavel\\Pages\\SolicitacoesDescarteColeta\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
