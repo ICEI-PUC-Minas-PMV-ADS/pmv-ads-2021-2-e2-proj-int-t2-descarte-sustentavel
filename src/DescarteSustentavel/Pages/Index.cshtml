@@ -4,7 +4,258 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<link rel="stylesheet" href="~/css/login.css" />
+
+<div class="action">
+    <div class="profile" onclick="menuToggle();">
+        <img src="img/profile_icon (1).svg">
+    </div>
+    <div class="menu">
+        <div class="container mt-6">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-12" id="login">
+                    <form asp-controller="Login" asp-action="Logar" id="regForm" method="post">
+                        <!--Pagina de login começo-->
+                        <div>
+                            <h3>
+                                <b>LOGIN</b><br>
+                                <small>Por favor, faça seu login.</small>
+                            </h3>
+                        </div>
+                        <p>
+                            <input name="username" type="email" pattern="[a-zA-ZO-9]+" class="form-control" placeholder="Insira seu email ou CPF/CNPJ" required maxlength="45" minlength="2">
+                        </p>
+                        <p>
+                            <input name="senha" type="password" class="form-control" placeholder="Digite aqui sua senha" required maxlength="45" minlength="2">
+                        </p>
+                        <div class="container-fluid">
+                            <a href="#" onclick="mostrar('esqueceuSenha') " id="senha">Esqueceu sua senha?</a>
+                        </div>
+                        <div class="col-sm-6" id="escolha">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                                <label class="form-check-label" for="inlineRadio1">Descartador</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" id="escolha">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                                <label class="form-check-label" for="inlineRadio2">Ecoponto</label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar" id="btn" />
+
+                        <p class="link">
+                            <a href="#" id="btnn" onclick="mostrar('cadastro')">Não tem conta? Cadastre-se</a>
+                        </p>
+                    </form>
+                </div>
+                <!--Começo Cadastro-->
+                <div class="col-md-12" id="cadastro" style="display: none;">
+                    <form asp-controller="Login" asp-action="Cadastrar" id="regForm" method="post">
+                        <div id="cadastro-passo-1">
+                            <div>
+                                <h3>
+                                    <b>CADASTRE-SE</b><br>
+                                    <small>Como deseja se cadastrar?</small><br>
+                                </h3>
+                            </div>
+                            <div id="login">
+                                <div class="col-sm-4" id="cadastrese">
+                                    <img src="/img/descartador_icon (1).svg">
+                                </div>
+
+                                <div class="col-sm-4" id="cadastrese">
+                                    <img src="/img/ecoponto_icon.svg">
+                                </div>
+                                <div class="col-sm-6" id="escolha">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                                        <label class="form-check-label" for="inlineRadio1">Descartador</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" id="escolha">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                                        <label class="form-check-label" for="inlineRadio2">Ecoponto</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="link">
+                                <a href="#" id="nextBtn" onclick="wizardPasso('cadastro', 2)">Próximo</a>
+                            </p>
+                        </div>
+                        <div id="cadastro-passo-2" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>CADASTRE-SE</b>
+                                    <small>Nos conte um pouco sobre você:</small>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <input name="nome" type="text" class="form-control" placeholder="Insira seu nome completo" required maxlength="25" minlength="2">
+                                    </p>
+                                    <p>
+                                        <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email" required maxlength="25" minlength="2">
+                                    </p>
+                                    <p>
+                                        <input name="cpfOuCnpj" type="text" class="form-control" placeholder="Insira seu CPF/CNPJ" required maxlength="25" minlength="2">
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="link">
+
+                                <a href="#" id="nextBtn" onclick="wizardPasso('cadastro', 3)">Próximo</a>
+                            </p>
+                            <!--<a href="#" onclick="wizardPasso('cadastro', 1)">Voltar</a>-->
+                        </div>
+                        <div id="cadastro-passo-3" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>CADASTRE-SE</b>
+                                    <small>Quase lá! Agora vamos criar uma senha:</small><br>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <input name="senha" type="password" class="form-control" placeholder="Insira sua senha" required maxlength="25" minlength="2">
+                                    </p>
+                                    <p>
+                                        <input name="senha" type="password" class="form-control" placeholder="Confirme a senha" required maxlength="25" minlength="2">
+                                    </p>
+                                    <div class="form-check" id="lembrar">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Lembrar-se de mim
+                                        </label>
+                                    </div>
+                                    <p class="link">
+                                        <a href="#" id="nextBtn" onclick="wizardPasso('cadastro', 4)">Próximo</a>
+                                    </p>
+                                    <!-- <p class="link">
+
+                                        <a href="#" onclick="wizardPasso('cadastro', 1)">Voltar</a>
+                                    </p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cadastro-passo-4" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>CADASTRO CONCLUIDO :)</b>
+                                    <small>Seja muito bem vindo!</small>
+                                </h3>
+                            </div>
+                            <img id="img" src="/img/verifica.png">
+                        </div>
+                    </form>
+                    <p class="link" id="fazerlog">
+                        <a href="#" onclick="mostrar('login')">fazer login</a>
+                    </p>
+                </div>
+                <div class="col-md-12" id="esqueceuSenha" style="display: none;">
+                    <form asp-controller="Login" asp-action="esqueceuSenha" id="regForm" method="post">
+                        <div id="esqueceuSenha-passo-1">
+                            <div>
+                                <h3 id="h3">
+                                    <b>RECUPERAR SENHA</b><br><br>
+                                    <small id="small">Forneça o email da conta que deseja recuperar</small><br>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email ou CPF/CNPJ">
+                                    </div>
+                                    <p>
+                                </div>
+                            </div>
+                            <p class="link">
+                                <a href="#" id="nextBtn" onclick="wizardProximo('esqueceuSenha', 2)">Proximo</a>
+                            </p>
+                        </div>
+                        <!--Começo recuperar senha -->
+                        <div id="esqueceuSenha-passo-2" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>RECUPERAR SENHA</b><br><br>
+                                    <small>Como prefere receber o código para reset da senha?</small><br>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <input name="email" type="email" class="form-control" placeholder="Email para *****souza@outlook.com">
+                                    </p>
+                                    <p>
+                                        <input name="sms" type="text" class="form-control" placeholder="SMS para ** ****-4592">
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="link">
+                                <a href="#" id="nextBtn" onclick="wizardProximo('esqueceuSenha', 3)">Proximo</a>
+                            </p>
+                        </div>
+                        <div id="esqueceuSenha-passo-3" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>CÓDIGO DE RECUPERAÇÃO</b><br><br>
+                                    <small>Digite o código recebido:</small><br>
+                                </h3>
+                            </div>
+                            <p>
+                                <input name="email" type="email" class="form-control" placeholder="Digite aqui seu email">
+                            </p>
+                            <p class="link">
+                                <a href="#" id="nextBtn" onclick="wizardProximo('esqueceuSenha', 4)">Proximo</a>
+                            </p>
+                        </div>
+                        <div id="esqueceuSenha-passo-4" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>NOVA SENHA</b><br><br>
+                                    <small>Hora de criar sua nova senha:</small><br>
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p>
+                                        <input type="password" class="form-control" id="password" placeholder="Insira sua nova senha" required>
+                                        <small id="erro-password" class="vermelho"></small>
+                                    </p>
+                                    <p>
+                                        <input type="password" placeholder="Confirme Senha" class="form-control" id="confirm_password" required>
+                                        <small id="erro-email" class="vermelho"></small>
+                                    </p>
+                                    <div class="alert alert-dange" hidden id="senhas-diferente">
+                                        Senhas não correspondem!
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="link">
+                                <a href="#" id="nextBtn" onclick="wizardProximo('esqueceuSenha', 5)">Proximo</a>
+                            </p>
+                        </div>
+                        <div id="esqueceuSenha-passo-5" style="display: none;">
+                            <div>
+                                <h3>
+                                    <b>CADASTRO CONCLUIDO :)</b>
+                                    <small>Pronto para fazer login?</small>
+                                </h3>
+                            </div>
+                            <img id="img" src="/img/verifica.png">
+                        </div>
+                    </form>
+                    <p class="link" id="fazerlog">
+                        <a href="#" onclick="mostrar('login')">fazer login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script type="text/javascript" src="~/js/login.js"></script>

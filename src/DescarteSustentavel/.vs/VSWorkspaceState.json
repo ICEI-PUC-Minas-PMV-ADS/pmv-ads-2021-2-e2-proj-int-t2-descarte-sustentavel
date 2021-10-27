@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Debug\\net5.0",
+    "\\bin\\Release",
+    "\\bin\\Release\\net5.0",
+    "\\Data",
+    "\\Migrations",
+    "\\Pages",
+    "\\Pages\\ItensDescarte",
+    "\\Pages\\Shared"
+  ],
+  "SelectedNode": "\\Pages\\ItensDescarte\\Create.cshtml",
+  "PreviewInSolutionExplorer": false
+}

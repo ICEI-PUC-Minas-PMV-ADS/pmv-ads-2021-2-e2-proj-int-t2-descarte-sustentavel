@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="92.001" viewBox="0 0 97 92.001">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ffb9"/>
+      <stop offset="1" stop-color="#00a4ff"/>
+    </linearGradient>
+  </defs>
+  <path id="ecoponto_icon" d="M0,92v-2.9a8,8,0,0,1,8-8H87.8a8,8,0,0,1,8,8V92ZM5.988,78.684a7.189,7.189,0,0,1,6.749-7.174V32.684H25.524V71.5h6.394V32.684H44.7V71.5H51.1V32.684H63.886V71.5h6.394V32.684H83.066V71.51a7.187,7.187,0,0,1,6.748,7.174ZM10,29.053A3.9,3.9,0,0,1,6.124,25.51H0V19.487L48.5,0,97,19.487V25.51H90.877a3.9,3.9,0,0,1-3.882,3.543Z" fill="url(#linear-gradient)"/>
+</svg>
