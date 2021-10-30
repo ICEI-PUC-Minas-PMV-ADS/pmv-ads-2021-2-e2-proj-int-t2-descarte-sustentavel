@@ -53,71 +53,81 @@
 <div class="flex-container">
 
     <div class="titulo_cadastrar_solicitacao">
-        <img src="cadastrarsolicitacao_icon.svg" width="70vw" height="70vh" alt="">
+        <img src="~/icons/cadastrarsolicitacao_icon.svg" width="70vw" height="70vh" alt="">
         <h1 id="titulo">Cadastrar Nova Solicitação</h1>
     </div>
 
     <div id="formulario_geral">
-        <form method="post" action="" id="corpo_formulario_cadastro_solicitacao" class="col-12 row g-4 needs-validation">
+        <form method="post" id="corpo_formulario_cadastro_solicitacao" class="col-12 row g-4 needs-validation">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div id="sessao_informacoes_gerais">
-                <h5 class="col-12" style="margin-top: 30px">Informações Gerais</h5>
-                <br />
+
+                <div class="col-12 titulo_sessao">
+                    <h5>Informações Gerais</h5>
+                    <span class="fita_colorida"></span>
+                </div>
                 <div class="campo col-md-4 form-group">
-                    <label class="form-label control-label">Numero da Solicitação</label>
+                    <label class="control-label">Numero da Solicitação</label>
                     <input type="text" name="nome" id="numeroSolicitacao" class="form-control" placeholder="001" disabled
                            required onkeypress="return onlynumber()">
                 </div>
 
                 <div class="col-md-8">
-                    <label asp-for="SolicitacaoDescarteColeta.IDDescartador" class="form-label control-label">Descartador</label>
+                    <label asp-for="SolicitacaoDescarteColeta.IDDescartador" class="control-label">Descartador</label>
                     <input asp-for="SolicitacaoDescarteColeta.IDDescartador" id="descartador" class="form-control" placeholder="300.300.300-30 - GABRIEL VIANA" disabled required>
                     <span asp-validation-for="SolicitacaoDescarteColeta.IDDescartador" class="text-danger"></span>
                 </div>
 
                 <div class="col-3 form-group">
-                    <label asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="form-label col-8 control-label" style="padding-left: 0">Tipo de Material</label>
-                    <select asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" id="tipo_material" class="form-select dropdown form-control col-12" style="height:38px; border-radius: 4px">
+                    <label asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="control-label">Tipo de Material</label>
+                    <select asp-for="SolicitacaoDescarteColeta.TipoDoMaterial" id="tipo_material" class="form-select dropdown form-control col-12" required style="height:38px;">
                         <option selected disabled value="">Selecione</option>
-                        <option id="material_reciclavel" value="Reciclável">Reciclável</option>
-                        <option id="material_eletronico" value="Eletrônico">Eletrônico</option>
+                        <option id="material_reciclavel" value='Reciclável'>Reciclável</option>
+                        <option id="material_eletronico" value='Eletrônico'>Eletrônico</option>
                     </select>
+                    <span asp-validation-for="SolicitacaoDescarteColeta.TipoDoMaterial" class="text-danger"></span>
                 </div>
 
+
                 <div class="col-md-2 form-group">
-                    <label asp-for="SolicitacaoDescarteColeta.QtdeDeItens" class="form-label control-label">Qtd de Itens</label>
-                    <input asp-for="SolicitacaoDescarteColeta.QtdeDeItens" min="1" max="5" id="qtd_itens" class="form-control" value="1" disabled required>
+                    <label asp-for="SolicitacaoDescarteColeta.QtdeDeItens" class="control-label">Qtd de Itens</label>
+                    <input asp-for="SolicitacaoDescarteColeta.QtdeDeItens" min="1" max="5" id="qtd_itens" class="form-control" value="1" required>
                 </div>
             </div>
 
 
 
             <div id="sessao_adicionar_itens">
-                <h5 class="col-12" style="margin-top: 50px">Adicionar Itens</h5>
 
-                <form action="" id="formulario_adicionar_itens" name="formulario_adicionar_itens">
-                    <div class="col-md-3">
-                        <label class="form-label">Tipo de item</label>
-                        <select id="tipo_item" class="form-select form-control col-12" style="height:38px; border-radius: 4px" required>
-                            <option id="" selected disabled value="">Selecione</option>
-                        </select>
-                    </div>
+                <div class="col-12 titulo_sessao">
+                    <h5>Adicionar Itens</h5>
+                    <span class="fita_colorida"></span>
+                </div>
+                
+                    <div class="campos_formulario_itens">
+                        <div class="col-md-4">
+                            <label class="control-label">Tipo de item</label>
+                            <select id="tipo_item" class="form-select form-control dropdown" required>
+                                <option id="" selected value="">Selecione</option>
+                            </select>
+                        </div>
 
-                    <div class="col-md-7">
-                        <label class="form-label">Descrição do Item</label>
-                        <input type="text" name="" id="item_descricao" class="form-control" required>
-                        <i class="bi bi-plus-square"></i>
-                    </div>
+                        <div class="col-md-7">
+                            <label class="control-label">Descrição do Item</label>
+                            <input type="text" name="" id="item_descricao" class="form-control" required>
+                            <i class="bi bi-plus-square"></i>
+                        </div>
 
-                    <div class="col-md-1" id="button_adicionar_item">
-                        <button type="button" id="button_adicionar_item_btn" class="btn form-control" style="background-color: #00a4ff; margin-top: 35px; height: 40px; width: 40px;">
-                            <img src="/plus_icon.svg" alt="plus_icon">
-                        </button>
+                        <div class="col-md-1" id="button_adicionar_item">
+                            <button type="button" id="button_adicionar_item_btn" class="btn form-control">
+                                <img src="~/icons/plus_icon.svg" alt="plus_icon">
+                            </button>
+                        </div>
                     </div>
-                </form>
+                
             </div>
 
-            <table class="table table-striped" id="tabela_itens" style="margin:30px 15px; width:95%">
+            <table class="table table-striped" id="tabela_itens">
                 <thead>
                     <tr>
                         <th scope="col">Nº Item</th>
@@ -130,50 +140,46 @@
             </table>
 
             <div id="sessao_informacoes_entrega">
-                <h5 class="col-12">Informações de Entrega</h5>
 
+                <div class="col-12 titulo_sessao">
+                    <h5>Informações de Entrega</h5>
+                    <span class="fita_colorida"></span>
+                </div>
                 <div class="col-md-9 form-group">
-                    <label asp-for="SolicitacaoDescarteColeta.IDEcoponto" class="form-label control-label">Ecoponto de Destino</label>
+                    <label asp-for="SolicitacaoDescarteColeta.IDEcoponto" class="control-label">Ecoponto de Destino</label>
                     <div style="display: flex; align-items: center;">
                         <input asp-for="SolicitacaoDescarteColeta.IDEcoponto" id="destino" class="form-control" required>
                         <span asp-validation-for="SolicitacaoDescarteColeta.IDEcoponto" class="text-danger"></span>
                         <a type="button" class="btn btn-primary col-md-3" style="margin: 0 0 0 25px; display: flex; align-items: center; color: white; font-family: 'Rubik', sans-serif; font-size: 1.1em; font-weight: normal; background-color: #00A4FF; border-radius: 8px; border: none; display: flex; flex-wrap: nowrap; align-content: center; justify-content: center;">
                             <p style="margin-bottom: 0; color: white">Buscar Ecoponto</p>
-                            <img src="" alt="" style="margin: 0 15px; padding: 0;">
+                            <img src="~/icons/lupa.svg" alt="" style="margin: 0 15px; padding: 0;">
                         </a>
 
                     </div>
                 </div>
-                <!-- <button href="" class="btn btn-primary col-md-3" height="70px">Buscar Ecopontos
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search"
-                viewBox="0 0 16 16">
-                <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-        </button> -->
 
                 <div class="col-md-4 form-group" id="teste">
-                    <label asp-for="SolicitacaoDescarteColeta.TipoDeSolicitacao" class="form-label">Tipo de Solicitação</label>
-                    <select asp-for="SolicitacaoDescarteColeta.TipoDeSolicitacao" id="tipo_material" class="form-select dropdown col-12 form-control" style="height:38px; border-radius: 4px" required>
-                        <option id="tipo_item_1" selected disabled value="">Selecione</option>
-                        <option id="tipo_item_1" value="D">Descarte</option>
-                        <option id="tipo_item_1" value="C">Coleta</option>
+                    <label asp-for="SolicitacaoDescarteColeta.TipoDeSolicitacao" class="control-label">Tipo de Solicitação</label>
+                    <select asp-for="SolicitacaoDescarteColeta.TipoDeSolicitacao" id="tipo_solicitacao" class="form-select dropdown col-12 form-control" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option value="D">Descarte</option>
+                        <option value="C">Coleta</option>
                     </select>
+                    <span asp-validation-for="SolicitacaoDescarteColeta.TipoDeSolicitacao" class="text-danger"></span>
                 </div>
 
                 <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker col-md-3 form-group" inline="true">
-                    <label asp-for="SolicitacaoDescarteColeta.DataDeEntrega" for="example" class="form-label">Agende seu Descarte</label>
+                    <label asp-for="SolicitacaoDescarteColeta.DataDeEntrega" for="example" class="control-label">Agende seu Descarte</label>
                     <input asp-for="SolicitacaoDescarteColeta.DataDeEntrega" placeholder="Select date" type="date" id="example" class="form-control">
                     <i class="fas fa-calendar input-prefix"></i>
                 </div>
-            </div>
-
+            </div>            
         </form>
     </div>
 
-    <div id="container_buttons">
-        <input class="botao_limpar form-group" type="reset" value="Limpar" form="corpo_formulario_cadastro_solicitacao">
-        <input class="botao_enviar form-group" type="submit" value="Salvar" form="corpo_formulario_cadastro_solicitacao">
+    <div id="botoes_formulario_solicitacao">
+        <input class="botao_limpar form-group col-3" type="reset" value="Limpar" form="corpo_formulario_cadastro_solicitacao">
+        <input class="botao_enviar form-group col-3" type="submit" value="Salvar" form="corpo_formulario_cadastro_solicitacao">
     </div>
 
 </div>
@@ -212,7 +218,7 @@ h1 {
 }
  h5{
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 20px;
  }
 
 #sessao_informacoes_gerais, #sessao_adicionar_itens, #sessao_informacoes_entrega{
@@ -228,10 +234,10 @@ h1 {
     margin-top: auto;
     margin-left: 0;
     padding: 30px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
-.form-label, p {
+.control-label, p {
     font-family: 'Rubik', sans-serif;
     font-style: medium;
     font-size: 18px;
@@ -244,50 +250,43 @@ h1 {
     margin-top: 1em;
 }
 
-.botao_limpar{
-    padding: 3px 100px;
-    border: 1px solid #005AFF;
-    border-radius: 8px;
-    color: aqua;
-    cursor: pointer;
-}
+    .botao_limpar {
+        padding: 3px 100px;
+        border: 2px solid #005AFF;
+        border-radius: 8px;
+        color: #005AFF;
+        cursor: pointer;
+        background-color: #FFF;
+    }
 
     input[type="submit"]:hover {
-        background-color: white;
-        color: aqua;
-        border: 1px solid #005AFF;
-        transition: 0.7s;
+        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        color: white;
+        transition:ease-in 0.7s;
     }
 
     .botao_enviar {
         padding: 3px 100px;
-        border: aqua;
+        border: #005AFF;
         border-radius: 8px;
         background-color: #005AFF;
         color: white;
+        margin-left: 25px;
     }
 
     input[type="reset"]:hover {
-        background-color: #005AFF;
+        background-color: #00A4FF;
         color: white;
-        border: 1px solid #005AFF;
+        border: 1px solid #00A4FF;
         transition: 0.7s;
     }
 
-input{
+input, .button_buscar_ecoponto{
     height: 50px;
 }
 
-.dropdown{
-    height: 50px;
-}
-
-#tipo_item{
-    height: 50px;
-}
-
-.button_buscar_ecoponto{
-    width: 10000px;
+.dropdown {
+    height: 38px;
 }
 
 .btn-primary{
@@ -295,6 +294,54 @@ input{
     height: 50px;
     margin-top: 3.6em;
 }
+
+    .titulo_sessao {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%
+    }
+
+    .fita_colorida {
+        width: 100px;
+        height: 5px;
+        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        border-radius: 100em;
+        margin: 0 0 25px;
+    }
+
+    #button_adicionar_item_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: #00A4FF;
+    }
+
+    #button_adicionar_item{
+        align-self: flex-end;
+    }
+
+    .campos_formulario_itens{
+        display:flex;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    #tabela_itens {
+        margin: 30px 15px;
+        width: 95%
+    }
+
+    #botoes_formulario_solicitacao {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top:25px;
+        width: 100%;
+    }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>

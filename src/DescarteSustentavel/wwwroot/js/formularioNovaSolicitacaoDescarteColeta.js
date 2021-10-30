@@ -1,15 +1,18 @@
-﻿var id = 1;
+﻿var id = 0;
 
 $("#button_adicionar_item").click(function (event) {
-    if (id < 6) {
-        criarLinhaGridItens()
+
+    $('#tipo_material').prop('readonly', true)
+
+    if (id < 5) {
         id++
+        criarLinhaGridItens()        
     }
-    else {
+    if (id == 5) {
         $('#button_adicionar_item_btn').prop('disabled', true)
         $('#tipo_item').prop('disabled', true)
-        $('#item_descricao').prop('disabled', true)
-        $('#button_adicionar_item_btn').css({ color: "#FFF", backgroundColor: "#e9ecef" })
+        $('#item_descricao').prop('disabled', true)        
+        $('#button_adicionar_item_btn').css({ color: "#FFF", backgroundColor: "#e9ecef", opacity: 5 })
     }
 
 })

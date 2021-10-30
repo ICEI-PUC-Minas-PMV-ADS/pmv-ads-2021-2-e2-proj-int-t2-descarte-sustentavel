@@ -19,7 +19,7 @@ namespace DescarteSustentavel.Models
         [Display(Name = "Ecoponto Responsável"), Column("ecoponto")]
         public int IDEcoponto { get; set; }
 
-        [Display(Name = "Tipo do Material"), StringLength(15, MinimumLength =3), Required, Column("tipo_material")]
+        [Display(Name = "Tipo do Material"), Required, Column("tipo_material")]
         public string TipoDoMaterial { get; set; }
 
         [Display(Name = "Quantidade de Itens"), Range(1, 10), Column("qtd_itens")]
