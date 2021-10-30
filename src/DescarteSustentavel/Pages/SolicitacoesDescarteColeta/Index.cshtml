@@ -56,9 +56,9 @@
                     @Html.DisplayFor(modelItem => item.DataDeEncerramento)
                 </td>
                 <td>
-                    <a asp-page="./Edit" asp-route-id="@item.IDSolicitacao">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.IDSolicitacao">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.IDSolicitacao">Delete</a>
+                    <a asp-page="./Edit" asp-route-id="@item.SolicitacaoDescarteColetaID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.SolicitacaoDescarteColetaID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.SolicitacaoDescarteColetaID">Delete</a>
                 </td>
             </tr>
         }
@@ -90,19 +90,13 @@
                     <span class="col-12" style="display: flex; flex-wrap: nowrap; align-items:center; width: 50px; height: 5px; background-color: #10FF69; border-radius: 100em; margin: 0 0 0 20px;"></span>
 
                     <ul style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 0.9em; color: #000; list-style: none; text-align: left; padding: 0 0 0 25px; margin-top: 25px;">
-                        <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.IDSolicitacao)</li>
-                        <br>
+                        <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.SolicitacaoDescarteColetaID)</li>
                         <li><b>Ecoponto:</b>  @Html.DisplayFor(modelItem => item.IDDescartador) </li>
-                        <br>
                         <div style="display: flex; flex-wrap: nowrap; align-items:center;">
                             <span style="width: 225px; height: 2px; background-color: #C8C8C8; border-radius: 100em; margin: 0 0 20px 0;"></span>
-                        </div>
                         <li><b>Data da Solicitação:</b> @Html.DisplayFor(modelItem => item.DataDaSolicitacao)</li>
-                        <br>
                         <li><b>Qtde de Itens:</b> @Html.DisplayFor(modelItem => item.QtdeDeItens)</li>
-                        <br>
                         <li><b>Status:</b> Em Andamento</li>
-                        <br>
                         <li><b>Data de Encerramento:</b> @Html.DisplayFor(modelItem => item.DataDeEncerramento)</li>
                     </ul>
                 </div>
@@ -127,19 +121,14 @@
                             <span class="col-12" style="display: flex; flex-wrap: nowrap; align-items: center; width: 50px; height: 5px; background-color: #005AFF; border-radius: 100em; margin: 0 0 0 20px;"></span>
 
                             <ul style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 0.9em; color: #000; list-style: none; text-align: left; padding: 0 0 0 25px; margin-top: 25px;">
-                                <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.IDSolicitacao)</li>
-                                <br>
+                                <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.SolicitacaoDescarteColetaID)</li>
                                 <li><b>Ecoponto:</b>  @Html.DisplayFor(modelItem => item.IDDescartador) </li>
-                                <br>
                                 <div style="display: flex; flex-wrap: nowrap; align-items:center;">
                                     <span style="width: 225px; height: 2px; background-color: #C8C8C8; border-radius: 100em; margin: 0 0 20px 0;"></span>
                                 </div>
                                 <li><b>Data da Solicitação:</b> @Html.DisplayFor(modelItem => item.DataDaSolicitacao)</li>
-                                <br>
                                 <li><b>Qtde de Itens:</b> @Html.DisplayFor(modelItem => item.QtdeDeItens)</li>
-                                <br>
                                 <li><b>Status:</b> Em Andamento</li>
-                                <br>
                                 <li><b>Data de Encerramento:</b> @Html.DisplayFor(modelItem => item.DataDeEncerramento)</li>
                             </ul>
                         </div>

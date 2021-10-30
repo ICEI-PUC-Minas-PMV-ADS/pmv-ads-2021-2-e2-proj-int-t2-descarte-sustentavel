@@ -29,7 +29,7 @@ namespace DescarteSustentavel.Pages.SolicitacoesDescarteColeta
                 return NotFound();
             }
 
-            SolicitacaoDescarteColeta = await _context.SolicitacaoDescarteColeta.FirstOrDefaultAsync(m => m.IDSolicitacao == id);
+            SolicitacaoDescarteColeta = await _context.SolicitacaoDescarteColeta.FirstOrDefaultAsync(m => m.SolicitacaoDescarteColetaID == id);
 
             if (SolicitacaoDescarteColeta == null)
             {

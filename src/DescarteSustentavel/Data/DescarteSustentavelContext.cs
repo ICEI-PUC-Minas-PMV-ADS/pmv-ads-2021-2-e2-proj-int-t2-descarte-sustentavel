@@ -14,8 +14,8 @@ namespace DescarteSustentavel.Data
         {
         }
 
-        public DbSet<DescarteSustentavel.Models.ItemDescarte> ItemDescarte { get; set; }
+        public DbSet<ItemDescarte> ItemDescarte { get; set; }
 
-        public DbSet<DescarteSustentavel.Models.SolicitacaoDescarteColeta> SolicitacaoDescarteColeta { get; set; }
+        public DbSet<SolicitacaoDescarteColeta> SolicitacaoDescarteColeta { get; set; }
     }
 }

@@ -7148,19 +7148,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dr465\\.nuget\\packages\\": {}
+    "C:\\Users\\gusta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dr465\\OneDrive\\Documentos\\GitHub\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+      "projectUniqueName": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
       "projectName": "DescarteSustentavel",
-      "projectPath": "C:\\Users\\dr465\\OneDrive\\Documentos\\GitHub\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
-      "packagesPath": "C:\\Users\\dr465\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dr465\\OneDrive\\Documentos\\GitHub\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
+      "projectPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+      "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+      "outputPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dr465\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7219,7 +7219,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

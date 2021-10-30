@@ -30,7 +30,7 @@ namespace DescarteSustentavel.Pages.ItensDescarte
                 return NotFound();
             }
 
-            ItemDescarte = await _context.ItemDescarte.FirstOrDefaultAsync(m => m.IDItem == id);
+            ItemDescarte = await _context.ItemDescarte.FirstOrDefaultAsync(m => m.ItemDescarteID == id);
 
             if (ItemDescarte == null)
             {
@@ -56,7 +56,7 @@ namespace DescarteSustentavel.Pages.ItensDescarte
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!ItemDescarteExists(ItemDescarte.IDItem))
+                if (!ItemDescarteExists(ItemDescarte.ItemDescarteID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace DescarteSustentavel.Pages.ItensDescarte
 
         private bool ItemDescarteExists(int id)
         {
-            return _context.ItemDescarte.Any(e => e.IDItem == id);
+            return _context.ItemDescarte.Any(e => e.ItemDescarteID == id);
         }
     }
 }

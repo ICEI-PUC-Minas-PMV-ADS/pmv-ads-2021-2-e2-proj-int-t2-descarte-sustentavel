@@ -14,10 +14,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ItemDescarte[0].tipoDoItem)
+                @Html.DisplayNameFor(model => model.ItemDescarte[0].TipoDoItem)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItemDescarte[0].descricaoDoItem)
+                @Html.DisplayNameFor(model => model.ItemDescarte[0].DescricaoDoItem)
             </th>
             <th></th>
         </tr>
@@ -26,15 +26,15 @@
 @foreach (var item in Model.ItemDescarte) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.tipoDoItem)
+                @Html.DisplayFor(modelItem => item.TipoDoItem)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.descricaoDoItem)
+                @Html.DisplayFor(modelItem => item.DescricaoDoItem)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.IDItem">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.IDItem">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.IDItem">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.ItemDescarteID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ItemDescarteID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ItemDescarteID">Delete</a>
             </td>
         </tr>
 }

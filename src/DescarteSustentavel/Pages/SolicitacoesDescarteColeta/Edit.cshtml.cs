@@ -30,7 +30,7 @@ namespace DescarteSustentavel.Pages.SolicitacoesDescarteColeta
                 return NotFound();
             }
 
-            SolicitacaoDescarteColeta = await _context.SolicitacaoDescarteColeta.FirstOrDefaultAsync(m => m.IDSolicitacao == id);
+            SolicitacaoDescarteColeta = await _context.SolicitacaoDescarteColeta.FirstOrDefaultAsync(m => m.SolicitacaoDescarteColetaID == id);
 
             if (SolicitacaoDescarteColeta == null)
             {
@@ -56,7 +56,7 @@ namespace DescarteSustentavel.Pages.SolicitacoesDescarteColeta
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!SolicitacaoDescarteColetaExists(SolicitacaoDescarteColeta.IDSolicitacao))
+                if (!SolicitacaoDescarteColetaExists(SolicitacaoDescarteColeta.SolicitacaoDescarteColetaID))
                 {
                     return NotFound();
                 }
@@ -71,7 +71,7 @@ namespace DescarteSustentavel.Pages.SolicitacoesDescarteColeta
 
         private bool SolicitacaoDescarteColetaExists(int id)
         {
-            return _context.SolicitacaoDescarteColeta.Any(e => e.IDSolicitacao == id);
+            return _context.SolicitacaoDescarteColeta.Any(e => e.SolicitacaoDescarteColetaID == id);
         }
     }
 }

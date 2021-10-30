@@ -29,7 +29,7 @@ namespace DescarteSustentavel.Pages.ItensDescarte
                 return NotFound();
             }
 
-            ItemDescarte = await _context.ItemDescarte.FirstOrDefaultAsync(m => m.IDItem == id);
+            ItemDescarte = await _context.ItemDescarte.FirstOrDefaultAsync(m => m.ItemDescarteID == id);
 
             if (ItemDescarte == null)
             {

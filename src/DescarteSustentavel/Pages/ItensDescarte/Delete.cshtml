@@ -13,21 +13,21 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ItemDescarte.tipoDoItem)
+            @Html.DisplayNameFor(model => model.ItemDescarte.TipoDoItem)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ItemDescarte.tipoDoItem)
+            @Html.DisplayFor(model => model.ItemDescarte.TipoDoItem)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ItemDescarte.descricaoDoItem)
+            @Html.DisplayNameFor(model => model.ItemDescarte.DescricaoDoItem)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ItemDescarte.descricaoDoItem)
+            @Html.DisplayFor(model => model.ItemDescarte.DescricaoDoItem)
         </dd>
     </dl>
     
     <form method="post">
-        <input type="hidden" asp-for="ItemDescarte.IDItem" />
+        <input type="hidden" asp-for="ItemDescarte.ItemDescarteID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-page="./Index">Back to List</a>
     </form>

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DescarteSustentavel.Migrations
 {
     [DbContext(typeof(DescarteSustentavelContext))]
-    [Migration("20211016192317_CorrecaoDisplayNamesSolicitacoesDescarteColeta")]
-    partial class CorrecaoDisplayNamesSolicitacoesDescarteColeta
+    [Migration("20211030024943_MigracaoInicialRecriandoBancoDeDados")]
+    partial class MigracaoInicialRecriandoBancoDeDados
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,68 +23,81 @@ namespace DescarteSustentavel.Migrations
 
             modelBuilder.Entity("DescarteSustentavel.Models.ItemDescarte", b =>
                 {
-                    b.Property<int>("IDItem")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("ItemDescarteID")
                         .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnName("id_item");
 
-                    b.Property<int?>("SolicitacaoDescarteColetaIDSolicitacao")
-                        .HasColumnType("int");
-
-                    b.Property<string>("descricaoDoItem")
+                    b.Property<string>("DescricaoDoItem")
                         .IsRequired()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("descricao_item");
 
-                    b.Property<string>("tipoDoItem")
+                    b.Property<int>("SolicitacaoDescarteColetaID")
+                        .HasColumnType("int")
+                        .HasColumnName("id_solicitacao_descarte_coleta");
+
+                    b.Property<string>("TipoDoItem")
                         .IsRequired()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("tipo_item");
 
-                    b.HasKey("IDItem");
+                    b.HasKey("ItemDescarteID");
 
-                    b.HasIndex("SolicitacaoDescarteColetaIDSolicitacao");
+                    b.HasIndex("SolicitacaoDescarteColetaID");
 
                     b.ToTable("ItemDescarte");
                 });
 
             modelBuilder.Entity("DescarteSustentavel.Models.SolicitacaoDescarteColeta", b =>
                 {
-                    b.Property<int>("IDSolicitacao")
+                    b.Property<int>("SolicitacaoDescarteColetaID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
+                        .HasColumnName("id_solicitacao")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DataDaSolicitacao")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasColumnName("data_solicitacao");
 
-                    b.Property<DateTime>("DataDeEncerramento")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime?>("DataDeEncerramento")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("data_encerramento");
 
                     b.Property<int>("IDDescartador")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("descartador");
 
                     b.Property<int>("IDEcoponto")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("ecoponto");
 
                     b.Property<int>("QtdeDeItens")
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasColumnName("qtd_itens");
 
                     b.Property<string>("TipoDoMaterial")
                         .IsRequired()
                         .HasMaxLength(15)
-                        .HasColumnType("nvarchar(15)");
+                        .HasColumnType("nvarchar(15)")
+                        .HasColumnName("tipo_material");
 
-                    b.HasKey("IDSolicitacao");
+                    b.HasKey("SolicitacaoDescarteColetaID");
 
                     b.ToTable("SolicitacaoDescarteColeta");
                 });
 
             modelBuilder.Entity("DescarteSustentavel.Models.ItemDescarte", b =>
                 {
-                    b.HasOne("DescarteSustentavel.Models.SolicitacaoDescarteColeta", null)
+                    b.HasOne("DescarteSustentavel.Models.SolicitacaoDescarteColeta", "SolicitacaoDescarteColeta")
                         .WithMany("ItensDescarte")
-                        .HasForeignKey("SolicitacaoDescarteColetaIDSolicitacao");
+                        .HasForeignKey("SolicitacaoDescarteColetaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SolicitacaoDescarteColeta");
                 });
 
             modelBuilder.Entity("DescarteSustentavel.Models.SolicitacaoDescarteColeta", b =>
