@@ -82,7 +82,7 @@
         {
             @if (item.TipoDoMaterial == "Reciclável")
             {
-                <div class="card1" style="border-radius: 18px; box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); width: 275px; height: 375px; padding: 5px 5px 0;">
+                <div class="card1" style="border-radius: 18px; box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); width: 275px; height: 375px; padding: 5px 5px 0; margin-bottom: 20px">
                     <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content: space-between; margin: 20px 3px 0 20px;">
                         <h1 style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 24px; color: #000; margin-bottom: 6px;">@Html.DisplayFor(modelItem => item.TipoDoMaterial)</h1>
                         <span style="width: 20px; height: 20px; background-color: red; border-radius: 50%; margin: 0 20px 5px 0;"></span>
@@ -111,7 +111,7 @@
             <div class="cardsCorpo" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: space-between;">
                 @foreach (var item in Model.SolicitacaoDescarteColeta)
                 {
-                    @if (item.TipoDoMaterial == "Eletronico")
+                    @if (item.TipoDoMaterial == "Eletrônico")
                     {
                         <div class="card1" style="border-radius: 18px; box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); width: 275px; height: 375px; padding: 5px 5px 0;">
                             <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content: space-between; margin: 20px 3px 0 20px;">

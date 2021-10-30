@@ -22,17 +22,23 @@ namespace DescarteSustentavel.Models
         [Display(Name = "Tipo do Material"), StringLength(15, MinimumLength =3), Required, Column("tipo_material")]
         public string TipoDoMaterial { get; set; }
 
-        [Display(Name = "Data da Solicitação"), DataType(DataType.Date), Column("data_solicitacao")]
-        public DateTime DataDaSolicitacao { get; set; }
-
         [Display(Name = "Quantidade de Itens"), Range(1, 10), Column("qtd_itens")]
         public int QtdeDeItens { get; set; }
+
+        [Display(Name = "Tipo de Solicitacao"), Required, Column("tipo_solicitacao")]
+        public char TipoDeSolicitacao { get; set; }
+
+        [Display(Name = "Data da Solicitação"), DataType(DataType.Date), Column("data_solicitacao")]
+        public DateTime DataDaSolicitacao { get; set; }
 
         [Display(Name = "Data de Encerramento"), DataType(DataType.Date), Column("data_encerramento")]
         public DateTime? DataDeEncerramento { get; set; }
 
         //public IEnumerable<int> StatusDaSolicitacao = { Pendente, EmAndamento, Cancelada, Finalizada }
         public IList<ItemDescarte> ItensDescarte { get; set; }
+
+        [Display(Name = "Data Prevista de Entrega"), DataType(DataType.Date), Column("data_entrega")]
+        public DateTime? DataDeEntrega { get; set; }
 
     }
 }

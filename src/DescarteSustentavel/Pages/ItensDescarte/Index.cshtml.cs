@@ -19,11 +19,14 @@ namespace DescarteSustentavel.Pages.ItensDescarte
             _context = context;
         }
 
-        public IList<ItemDescarte> ItemDescarte { get;set; }
+        public IList<ItemDescarte> ItensDescarte { get;set; }
 
         public async Task OnGetAsync()
         {
-            ItemDescarte = await _context.ItemDescarte.ToListAsync();
+            ItensDescarte = await _context.ItemDescarte
+                .Include(i => i.SolicitacaoDescarteColeta)
+                .AsNoTracking()
+                .ToListAsync();
         }
     }
 }

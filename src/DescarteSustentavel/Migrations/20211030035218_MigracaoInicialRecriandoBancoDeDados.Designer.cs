@@ -4,14 +4,16 @@ using DescarteSustentavel.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DescarteSustentavel.Migrations
 {
     [DbContext(typeof(DescarteSustentavelContext))]
-    partial class DescarteSustentavelContextModelSnapshot : ModelSnapshot
+    [Migration("20211030035218_MigracaoInicialRecriandoBancoDeDados")]
+    partial class MigracaoInicialRecriandoBancoDeDados
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,9 +82,10 @@ namespace DescarteSustentavel.Migrations
                         .HasColumnType("int")
                         .HasColumnName("qtd_itens");
 
-                    b.Property<string>("TipoDeSolicitacao")
+                    b.Property<string>("TipoDaSolicitacao")
                         .IsRequired()
-                        .HasColumnType("nvarchar(1)")
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)")
                         .HasColumnName("tipo_solicitacao");
 
                     b.Property<string>("TipoDoMaterial")

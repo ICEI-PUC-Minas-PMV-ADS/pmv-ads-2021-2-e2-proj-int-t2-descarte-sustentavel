@@ -12,9 +12,9 @@ namespace DescarteSustentavel.Pages.SolicitacoesDescarteColeta
 {
     public class CreateModel : PageModel
     {
-        private readonly DescarteSustentavel.Data.DescarteSustentavelContext _context;
+        private readonly DescarteSustentavelContext _context;
 
-        public CreateModel(DescarteSustentavel.Data.DescarteSustentavelContext context)
+        public CreateModel(DescarteSustentavelContext context)
         {
             _context = context;
         }

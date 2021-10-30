@@ -16,9 +16,11 @@ namespace DescarteSustentavel.Migrations
                     descartador = table.Column<int>(type: "int", nullable: false),
                     ecoponto = table.Column<int>(type: "int", nullable: false),
                     tipo_material = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    data_solicitacao = table.Column<DateTime>(type: "datetime2", nullable: false),
                     qtd_itens = table.Column<int>(type: "int", nullable: false),
-                    data_encerramento = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    tipo_solicitacao = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    data_solicitacao = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    data_encerramento = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    data_entrega = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {

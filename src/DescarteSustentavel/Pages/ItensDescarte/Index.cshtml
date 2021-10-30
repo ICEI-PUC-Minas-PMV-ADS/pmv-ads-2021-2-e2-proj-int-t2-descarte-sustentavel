@@ -2,10 +2,10 @@
 @model DescarteSustentavel.Pages.ItensDescarte.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Itens";
 }
 
-<h1>Index</h1>
+<h1>Itens</h1>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -14,16 +14,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ItemDescarte[0].TipoDoItem)
+                @Html.DisplayNameFor(model => model.ItensDescarte[0].TipoDoItem)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ItemDescarte[0].DescricaoDoItem)
+                @Html.DisplayNameFor(model => model.ItensDescarte[0].DescricaoDoItem)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.ItemDescarte) {
+@foreach (var item in Model.ItensDescarte) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.TipoDoItem)

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DescarteSustentavel.Migrations
 {
     [DbContext(typeof(DescarteSustentavelContext))]
-    [Migration("20211030024943_MigracaoInicialRecriandoBancoDeDados")]
-    partial class MigracaoInicialRecriandoBancoDeDados
+    [Migration("20211030035706_corrigirCampoTipoDeSolicitacao")]
+    partial class corrigirCampoTipoDeSolicitacao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -66,6 +66,10 @@ namespace DescarteSustentavel.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("data_encerramento");
 
+                    b.Property<DateTime?>("DataDeEntrega")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("data_entrega");
+
                     b.Property<int>("IDDescartador")
                         .HasColumnType("int")
                         .HasColumnName("descartador");
@@ -77,6 +81,11 @@ namespace DescarteSustentavel.Migrations
                     b.Property<int>("QtdeDeItens")
                         .HasColumnType("int")
                         .HasColumnName("qtd_itens");
+
+                    b.Property<string>("TipoDeSolicitacao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(1)")
+                        .HasColumnName("tipo_solicitacao");
 
                     b.Property<string>("TipoDoMaterial")
                         .IsRequired()
