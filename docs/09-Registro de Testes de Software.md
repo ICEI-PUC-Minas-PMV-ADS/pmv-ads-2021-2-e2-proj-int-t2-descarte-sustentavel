@@ -10,3 +10,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+
+teste
+
+![03_media-amazon_scarface](https://user-images.githubusercontent.com/65980497/139605612-35af9c17-c07a-43ea-b79d-be366f36fdc1.jpg)
