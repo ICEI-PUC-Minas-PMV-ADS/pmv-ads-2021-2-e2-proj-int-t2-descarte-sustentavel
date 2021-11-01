@@ -1,8 +1,8 @@
 # Registro de Testes de Software
 
- # CT-01 - Cadastro do usuário 
+ ## CT-01 - Cadastro do usuário 
 
-![Cadastro do usuário](CADASTRAR.png)
+![Cadastro do usuário](teladecadastro.png)
 
 ## Avaliação
 
