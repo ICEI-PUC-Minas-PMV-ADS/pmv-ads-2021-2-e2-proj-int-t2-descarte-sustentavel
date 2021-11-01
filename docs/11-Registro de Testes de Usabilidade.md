@@ -1,16 +1,16 @@
 # Registro de Testes de Usabilidade
 
-##Tarefa 3 - Cadastrar nova solicitação
+# Tarefa 1 - Cadastrar novo usuário
 
-https://user-images.githubusercontent.com/65980497/139612028-c672010a-e7f9-479b-ab74-260c752c5e32.mp4
-
-
-##Tarefa 2 - Esqueci senha/Login no sistema
-
-https://user-images.githubusercontent.com/65980497/139612067-293060bc-0b5c-4e2e-8e40-73875a5a76fe.mp4
+https://user-images.githubusercontent.com/65980497/139612267-6cff2dfc-c93c-4386-b019-ff41860a55d0.mp4
 
 
-##Tarega 1- Cadastrar novo usuário
+# Tarefa 2 - Esqueci senha/Logar no sistema
 
-https://user-images.githubusercontent.com/65980497/139612127-c1d635f5-5e85-40ee-a829-882a8739c64e.mp4
+https://user-images.githubusercontent.com/65980497/139612344-e46dd506-b13f-43f2-96a0-0f0e64b3d2f3.mp4
+
+
+# Tarefa 3 - Solicitação de coleta
+
+https://user-images.githubusercontent.com/65980497/139612379-5ca73c7b-43a3-4583-9aae-bc027473a7b4.mp4
 
