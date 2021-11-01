@@ -2,7 +2,7 @@
 
 # Tarefa 1 - Cadastrar novo usuário
 
-https://user-images.githubusercontent.com/65980497/139612267-6cff2dfc-c93c-4386-b019-ff41860a55d0.mp4
+https://user-images.githubusercontent.com/65980497/139612727-f3dfd96c-5aa9-4f3e-a0ae-4343f7b24cab.mp4
 
 
 # Tarefa 2 - Esqueci senha/Logar no sistema
