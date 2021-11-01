@@ -1,0 +1,42 @@
+﻿@page
+@model DescarteSustentavel.Pages.ItensDescarte.IndexModel
+
+@{
+    ViewData["Title"] = "Itens";
+}
+
+<h1>Itens</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ItensDescarte[0].TipoDoItem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ItensDescarte[0].DescricaoDoItem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.ItensDescarte) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoDoItem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoDoItem)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ItemDescarteID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ItemDescarteID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ItemDescarteID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

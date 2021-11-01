@@ -1,0 +1,58 @@
+﻿@page "{id:int}"
+@model DescarteSustentavel.Pages.SolicitacoesDescarteColeta.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SolicitacaoDescarteColeta</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.IDDescartador)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.IDDescartador)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.IDEcoponto)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.IDEcoponto)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.TipoDoMaterial)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.TipoDoMaterial)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.DataDaSolicitacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.DataDaSolicitacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.QtdeDeItens)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.QtdeDeItens)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta.DataDeEncerramento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SolicitacaoDescarteColeta.DataDeEncerramento)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="SolicitacaoDescarteColeta.SolicitacaoDescarteColetaID" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,180 @@
+﻿@page
+@model DescarteSustentavel.Pages.SolicitacoesDescarteColeta.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@*<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].IDDescartador)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].IDEcoponto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].TipoDoMaterial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].DataDaSolicitacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].QtdeDeItens)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SolicitacaoDescarteColeta[0].DataDeEncerramento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.SolicitacaoDescarteColeta)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IDDescartador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IDEcoponto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TipoDoMaterial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataDaSolicitacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QtdeDeItens)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataDeEncerramento)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.SolicitacaoDescarteColetaID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.SolicitacaoDescarteColetaID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.SolicitacaoDescarteColetaID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+<div class="flex-container" @*style="margin: 0 16%;*@">
+    <div id="titulo_icon_botao" style="display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; margin-top: 10vh; margin-bottom: 4vh;">
+        <h1 style="font-family: 'Rubik', sans-serif; font-size: 2.2em; font-weight: lighter; color: #000; text-align: left; width: 900px;  display: flex; align-items: center;"><img src="/icons/historico_icon.svg" alt="icon_historico" width="50vh" style="margin-right: 2vh;">Histórico de Descartes</h1>
+        <a asp-page="Create" id="botao_nova_solicitacao" type="button" class="btn btn-primary">
+            <img src="~/icons/nova-solicitacao_icon.svg" alt="" style="margin-right: 8px;">
+            <p style="margin-bottom: 0">Nova Solicitação</p>
+        </a>      
+    </div>
+    <h1 style="font-family: 'Rubik', sans-serif; font-size: 28px; font-weight: normal; color: #000; text-align: left; width: 900px; margin-top: 5vh; margin-bottom: 6px;">RECICLÁVEIS</h1>
+    <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content:start;">
+        <span style="width: 100px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 25px;"></span>
+    </div>
+    <div class="cardsCorpo" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between;">
+        @foreach (var item in Model.SolicitacaoDescarteColeta)
+        {
+            @if (item.TipoDoMaterial == "Reciclável")
+            {
+                <div class="card1" style="border-radius: 18px; box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); width: 275px; height: 375px; padding: 5px 5px 0; margin-bottom: 20px">
+                    <div style="display: flex; flex-wrap: wrap; align-items:center; justify-content: space-between; margin: 20px 3px 0 20px;">
+                        <h1 style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 24px; color: #000; margin-bottom: 6px;">@Html.DisplayFor(modelItem => item.TipoDeSolicitacao)</h1>
+                        <span style="width: 20px; height: 20px; background-color: red; border-radius: 50%; margin: 0 20px 5px 0;"></span>
+                    </div>
+                    <span class="col-12" style="display: flex; flex-wrap: nowrap; align-items:center; width: 50px; height: 5px; background-color: #10FF69; border-radius: 100em; margin: 0 0 0 20px;"></span>
+
+                    <ul style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 0.9em; color: #000; list-style: none; text-align: left; padding: 0 0 0 25px; margin-top: 20px; display: flex; flex-flow: column wrap; align-items: flex-start; justify-content:space-evenly">
+                        <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.SolicitacaoDescarteColetaID)</li>
+                        <li><b>Ecoponto:</b>  @Html.DisplayFor(modelItem => item.IDDescartador) </li>
+                        <div style="display: flex; flex-wrap: wrap; align-items:center;">
+                            <span style="width: 225px; height: 2px; background-color: #C8C8C8; border-radius: 100em; margin: 0 0 20px 0;"></span>
+                        </div>
+                        <li><b>Data da Solicitação:</b> @Html.DisplayFor(modelItem => item.DataDaSolicitacao)</li>
+                        <li><b>Qtde de Itens:</b> @Html.DisplayFor(modelItem => item.QtdeDeItens)</li>
+                        <li><b>Status:</b> Em Andamento</li>
+                        <li><b>Data de Encerramento:</b> @Html.DisplayFor(modelItem => item.DataDeEncerramento)</li>
+                    </ul>
+                </div>
+                }
+            }
+     </div>
+
+    <h1 style="font-family: 'Rubik', sans-serif; font-size: 28px; font-weight: normal; color: #000; text-align: left; width: 900px; margin-top: 5vh; margin-bottom: 6px;">ELETRÔNICOS</h1>
+    <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content:start;">
+        <span style="width: 100px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 25px;"></span>
+    </div>
+            <div class="cardsCorpo" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: center; justify-content: space-between;">
+                @foreach (var item in Model.SolicitacaoDescarteColeta)
+                {
+                    @if (item.TipoDoMaterial == "Eletrônico")
+                    {
+                        <div class="card1" style="border-radius: 18px; box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); width: 275px; height: 375px; padding: 5px 5px 0;">
+                            <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content: space-between; margin: 20px 3px 0 20px;">
+                                <h1 style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 24px; color: #000; margin-bottom: 6px;">@Html.DisplayFor(modelItem => item.TipoDoMaterial)</h1>
+                                <span style="width: 20px; height: 20px; background-color: red; border-radius: 50%; margin: 0 20px 5px 0;"></span>
+                            </div>
+                            <span class="col-12" style="display: flex; flex-wrap: nowrap; align-items: center; width: 50px; height: 5px; background-color: #005AFF; border-radius: 100em; margin: 0 0 0 20px;"></span>
+
+                            <ul style="font-family: 'Rubik', sans-serif; font-weight: lighter; font-size: 0.9em; color: #000; list-style: none; text-align: left; padding: 0 0 0 25px; margin-top: 25px;">
+                                <li><b>Numero da Solicitação:</b>   @Html.DisplayFor(modelItem => item.SolicitacaoDescarteColetaID)</li>
+                                <li><b>Ecoponto:</b>  @Html.DisplayFor(modelItem => item.IDDescartador) </li>
+                                <div style="display: flex; flex-wrap: nowrap; align-items:center;">
+                                    <span style="width: 225px; height: 2px; background-color: #C8C8C8; border-radius: 100em; margin: 0 0 20px 0;"></span>
+                                </div>
+                                <li><b>Data da Solicitação:</b> @Html.DisplayFor(modelItem => item.DataDaSolicitacao)</li>
+                                <li><b>Qtde de Itens:</b> @Html.DisplayFor(modelItem => item.QtdeDeItens)</li>
+                                <li><b>Status:</b> Em Andamento</li>
+                                <li><b>Data de Encerramento:</b> @Html.DisplayFor(modelItem => item.DataDeEncerramento)</li>
+                            </ul>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+<style>
+    #botao_nova_solicitacao {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.1em;
+        font-weight: normal;
+        background-color: #00A4FF;
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px
+    }
+        #botao_nova_solicitacao :hover {
+            background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        }
+
+    #teste_hover {
+        color: white;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.1em;
+        font-weight: normal;
+        background-color: #00A4FF;
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px
+    }
+
+        #teste_hover :hover {
+            background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        }
+
+        li{
+            margin: 5px 0;
+        }
+</style>
