@@ -2,9 +2,9 @@
 
 *CT-01-Cadastro do usuário 
 
-![Cadastro de Usuário 1](teladecadastro.png)
+![Cadastro de Usuário 1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/dev/docs/img/teladecadastro.png.png)
 
-![Cadastro de Usuário 2](teladecadastro1.png)
+![Cadastro de Usuário 2](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/dev/docs/img/teladecadastro1.png.png)
 
 ![Cadastro de Usuário 3](teladecadastro2.png)
 
