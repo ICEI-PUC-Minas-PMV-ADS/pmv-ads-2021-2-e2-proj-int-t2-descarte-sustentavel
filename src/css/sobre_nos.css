@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  /* color: #212529; */
+  text-align: left;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.d-table-row {
+  display: table-row !important;
+}
+
+.d-table-cell {
+  display: table-cell !important;
+}
+
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.d-inline-flex {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+}
+
+.heading-section {
+  font-size: 28px;
+  color: #000;
+}
+
+.heading-section small {
+  font-size: 18px;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+
+.navbar-btn {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: white;
+  color: black;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  box-shadow: 0px 0px 0px 3px rgb(0 0 0 / 8%);
+  margin-top: 7vh;
+}
+
+#sidebar .h6 {
+  color: #fff;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar.active .custom-menu {
+  margin-right: -50px;
+}
+
+#sidebar h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#sidebar h1 .logo {
+  color: #fff;
+}
+
+#sidebar ul.components {
+  padding: 0;
+}
+
+#sidebar ul li {
+  font-size: 16px;
+}
+
+#sidebar ul li>ul {
+  margin-left: 10px;
+}
+
+#sidebar ul li>ul li {
+  font-size: 14px;
+}
+
+#sidebar ul li a {
+  padding: 10px 0;
+  display: block;
+}
+
+#sidebar .custom-menu {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  margin-right: -20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #sidebar .custom-menu {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+#sidebar .custom-menu .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 991.98px) {
+  #sidebarCollapse span {
+    display: none;
+  }
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#campo_sobre_nos {
+  border: solid 2px #006DFF;
+  padding: 10px 20px 10px 20px;
+}
+
+#campo_equipe {
+  border: solid 2px #006DFF;
+}
+
+#primeiro_grupo {
+  flex-direction: row;
+  text-align: center;
+  padding: 0;
+}
+
+#segundo_grupo {
+  flex-direction: row;
+  text-align: center;
+  padding: 0;
+}
+
+#titulo_sobre_nos {
+  display: inline-flex;
+  justify-items: left;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Rubik', sans-serif;
+}
+
+#titulo_equipe {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+}
+
+#campo_equipe>img {
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Monstserrat, sans-serif';
+  font-style: normal;
+}
+
+#img_equipes {
+  border-radius: 50%;
+}
+
+#teste_teste>div>img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.borda_colorida {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  background-image: linear-gradient(to right, #00FFB9, #00A4FF);
+}
+
+p {
+  font-family: 'Monstserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#campo_sobre_nos>p {
+  color: #8C8C8C;
+}
+
+#teste_teste>div>p {
+  color: #00A4FF;
+}
+
+.borda_colorida>img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+#teste>div {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+a:hover {
+  background-color: #ECFFF3;
+  color: aqua;
+  font-weight: medium;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: lighter;
+  padding: 20px 5px;
+}
+
+#teste_dois {
+  background-color: white;
+  transition: all 0.6s ease 0s;
+  /* box-shadow: 3px 0px 0px 0px rgb(0 0 0 / 8%); */
+  height: 97vh;
+}
+
+#conteudo_geral {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+
+}
+
+#campo_sobre_nos{
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0px 0px 0px 2px rgb(0 0 0 / 8%);
+  margin-bottom: 100px;
+}
+
+.header{
+  position: fixed;
+  top:0;
+  left: 0;
+}
+
+#logo_img{
+  margin-left: 13vw;
+}
