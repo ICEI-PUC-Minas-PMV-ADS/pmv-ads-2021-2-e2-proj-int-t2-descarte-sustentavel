@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7th30Kn555UEVn1XdcXjwPcApWN0oh2eHoJJsp/VhdsHsGeSmXOxoWP/rNnjiMKm2owqdhfl6+pUWdxsWSPaZQ==",
+  "dgSpecHash": "c9v3O/wYSS4qHd+o4nQwlj7fIC+1Sx4+YdTZ3N4R8vVJK6eS6Y+6gEUuBYWEJMNaYDO2vMao58GVAVlEUqiuvA==",
   "success": true,
-  "projectFilePath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+  "projectFilePath": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gusta\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gusta\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

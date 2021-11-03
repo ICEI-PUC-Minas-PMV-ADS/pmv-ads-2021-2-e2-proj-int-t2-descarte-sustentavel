@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {}
+    "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {}
   },
   "projects": {
-    "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {
+    "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+        "projectUniqueName": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
         "projectName": "DescarteSustentavel",
-        "projectPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+        "projectPath": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
-        "outputPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
+        "outputPath": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",
