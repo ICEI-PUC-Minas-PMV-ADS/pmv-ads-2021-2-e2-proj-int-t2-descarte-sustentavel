@@ -778,6 +778,7 @@ D:\Biblioteca\Documentos\Faculdade\ADS\2º Período\DescarteSustentável\pmv-ads
 D:\Biblioteca\Documentos\Faculdade\ADS\2º Período\DescarteSustentável\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\ref\DescarteSustentavel.dll
 D:\Biblioteca\Documentos\Faculdade\ADS\2º Período\DescarteSustentável\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\DescarteSustentavel.pdb
 D:\Biblioteca\Documentos\Faculdade\ADS\2º Período\DescarteSustentável\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\DescarteSustentavel.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\bin\Debug\net5.0\appsettings.json
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\bin\Debug\net5.0\DescarteSustentavel.exe
@@ -934,3 +935,5 @@ C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\ref\DescarteSustentavel.dll
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\DescarteSustentavel.pdb
 C:\Users\gusta\Source\Repos\ICEI-PUC-Minas-PMV-ADS\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\obj\Debug\net5.0\DescarteSustentavel.genruntimeconfig.cache
+=======
+>>>>>>> 54bc00055e340deb854e709040830ea3e6e59194

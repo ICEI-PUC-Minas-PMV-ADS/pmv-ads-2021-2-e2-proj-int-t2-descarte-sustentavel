@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
         "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\gusta\\Source\\Repos\\ICEI-PUC-Minas-PMV-ADS\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
+=======
+    "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\DescarteSustentável\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {}
+  },
+  "projects": {
+    "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\DescarteSustentável\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\DescarteSustentável\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+        "projectName": "DescarteSustentavel",
+        "projectPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\DescarteSustentável\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\DescarteSustentavel.csproj",
+        "packagesPath": "C:\\Users\\gusta\\.nuget\\packages\\",
+        "outputPath": "D:\\Biblioteca\\Documentos\\Faculdade\\ADS\\2º Período\\DescarteSustentável\\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\\src\\DescarteSustentavel\\obj\\",
+>>>>>>> 54bc00055e340deb854e709040830ea3e6e59194
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gusta\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DescarteSustentavel
+<<<<<<< HEAD
 build_property.ProjectDir = c:\users\gusta\source\repos\icei-puc-minas-pmv-ads\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\descartesustentavel\
+=======
+build_property.ProjectDir = D:\Biblioteca\Documentos\Faculdade\ADS\2º Período\DescarteSustentável\pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel\src\DescarteSustentavel\
+>>>>>>> 54bc00055e340deb854e709040830ea3e6e59194
