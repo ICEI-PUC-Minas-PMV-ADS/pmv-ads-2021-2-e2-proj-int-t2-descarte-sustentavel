@@ -10,10 +10,8 @@ O referido projeto trata de uma ferramenta que possibilita resolver o problema d
 
 ## Integrantes
 
-* Amanda Menezes de Oliveira
 * Daiane Aparecida Rocha 
 * Daniella Rodrigues Oliveira 
-* Elena Menezes Braga Campos
 * Gabriel Teixeira Viana
 * Gustavo Costa 
 
