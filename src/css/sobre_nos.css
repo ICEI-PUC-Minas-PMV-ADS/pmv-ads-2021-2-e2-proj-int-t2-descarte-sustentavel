@@ -207,10 +207,12 @@ body {
 #campo_sobre_nos {
   border: solid 2px #00A4FF;
   padding: 10px 20px 10px 20px;
+  border-radius: 2%;
 }
 
 #campo_equipe {
   border: solid 2px #00A4FF;
+  border-radius: 2%;
 }
 
 #primeiro_grupo {
@@ -264,6 +266,7 @@ h2 {
   width: 160px;
   height: 160px;
   background-image: linear-gradient(to right, #00FFB9, #00A4FF);
+  margin-top: 5px;
 }
 
 p {
@@ -284,6 +287,7 @@ p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
+  margin-top: 5px;
 }
 
 #teste>div {
@@ -322,11 +326,9 @@ a {
   flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) {}
 
-}
-
-#campo_sobre_nos{
+#campo_sobre_nos {
   flex: 0 0 auto;
   width: 66.66666667%;
 }
@@ -341,12 +343,12 @@ a {
   margin-bottom: 100px;
 }
 
-.header{
+.header {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
 }
 
-#logo_img{
+#logo_img {
   margin-left: 13vw;
 }

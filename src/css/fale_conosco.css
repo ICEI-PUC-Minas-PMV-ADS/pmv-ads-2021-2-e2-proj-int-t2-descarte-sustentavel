@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#campo_fale_conosco {
+    border: solid 2px #00A4FF;
+    padding: 10px 20px 10px 20px;
+    border-radius: 2%;
+}
+
+#titulo_fale_conosco {
+    display: inline-flex;
+    justify-items: left;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#titulo_fale_conosco {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+}
+
+#campo_fale_conosco>img {
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Monstserrat, sans-serif';
+    font-family: 'Rubik', sans-serif;
+    font-style: medium;
+    font-size: 30px;
+    color: #393939;
+}
+
+.borda_colorida {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    background-image: linear-gradient(to right, #00FFB9, #00A4FF);
+}
+
+#campo_fale_conosco>p {
+    color: #8C8C8C;
+    padding: 10px 10px 10px 10px;
+}
+
+#campo_fale_conosco>div>p {
+    color: #00A4FF;
+}
+
+.borda_colorida>img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#campo_fale_conosco {
+    width: 33vw;
+}
+
+.titulo_fale_conosco>img {
+    padding-right: 25px;
+}
+
+#botao_enviar {
+    padding: 3px 50px;
+    border: #00A4FF;
+    border-radius: 8px;
+    background-color: #00A4FF;
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: 1em;
+    float: right; 
+}
+
+b {
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+}
+
+#exampleFormControlInput1, textarea {
+    text-decoration: none;
+    color: black;   
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
