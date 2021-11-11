@@ -16,6 +16,5 @@ versao1 - Documentação de Programação de Funcionalidades
 
 - RF009 - Todos os itens de menu mencionados estão presentes na primeira versão do navbar animado.
 
-- RF010 - No formulário de Solicitação de Descarte e Coleta já é possível escolher entre Recicláveis e Eletrônicos por meio de um dropdown com ambas as opções;
+- RF010 - No formulário de Solicitação de Descarte e Coleta já é possível escolher entre Recicláveis e Eletrônicos por meio de um dropdown com ambas as opções.
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
