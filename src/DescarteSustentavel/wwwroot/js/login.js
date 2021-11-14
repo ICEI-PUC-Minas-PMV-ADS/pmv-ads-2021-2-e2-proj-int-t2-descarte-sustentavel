@@ -4,48 +4,47 @@
 }
 
 function wizardPasso(wizard, etapa) {
-    for (var i = 1; i <= 4; i++) {
-        document.getElementById(wizard+"-passo-" + i).style.display = "none";
+    for (var i = 1; i <= 3; i++) {
+        try {
+            document.getElementById(wizard + "-passo-" + i).style.display = "none";
+        } catch (error) { }
     }
-    console.log(wizard);
-    console.log(etapa);
+
     document.getElementById(wizard + "-passo-" + etapa).style.display = "inline";
+
+    let tipoDeUsuario = Array.from(document.getElementsByName("TipoDeUsuario")).find(r => r.checked).value;
+    console.log(tipoDeUsuario);
+    if (tipoDeUsuario === "Ecoponto") {
+        document.getElementById("ecoponto-1").style.display = "inline";
+        document.getElementById("ecoponto-2").style.display = "inline";
+    }
 }
 
 function resetWizard(wizard) {
-    for (var i = 1; i <= 4; i++) {
-        document.getElementById(wizard + "-passo-" + i).style.display = "none";
+    for (var i = 1; i <= 3; i++) {
+        try {
+            document.getElementById(wizard + "-passo-" + i).style.display = "none";
+        } catch (error) { }
     }
     document.getElementById(wizard + "-passo-" + 1).style.display = "inline";
-}
-function wizardProximo(wizard, etapa) {
-    for (var j = 1; j <= 5; j++) {
-        document.getElementById(wizard + "-passo-" + j).style.display = "none";
-    }
-    console.log(wizard);
-    console.log(etapa);
-    document.getElementById(wizard + "-passo-" + etapa).style.display = "inline";
 }
 
 function resetWizard(wizard) {
     for (var j = 1; j <= 5; j++) {
-        document.getElementById(wizard + "-passo-" + j).style.display = "none";
+        try {
+            document.getElementById(wizard + "-passo-" + i).style.display = "none";
+        } catch (error) { }
     }
     document.getElementById(wizard + "-passo-" + 1).style.display = "inline";
 }
-function mostrar(mostrar) {
-    console.log(mostrar)
+function mostrar(mostrando) {
+    console.log(mostrando)
     document.getElementById("login").style.display = "none";
     document.getElementById("cadastro").style.display = "none";
-    document.getElementById("esqueceuSenha").style.display = "none";
-    document.getElementById(mostrar).style.display = "inline";
+    document.getElementById(mostrando).style.display = "inline";
 
-    if (mostrar === 'login') {
+    if (mostrando === 'login') {
         resetWizard("cadastro")
-    }
-
-    if (mostra === 'login') {
-        resetWizard("esqueceuSenha")
     }
 }
 

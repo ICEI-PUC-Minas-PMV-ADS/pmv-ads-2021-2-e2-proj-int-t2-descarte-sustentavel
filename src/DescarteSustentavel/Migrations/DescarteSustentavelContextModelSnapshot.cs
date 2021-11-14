@@ -110,6 +110,7 @@ namespace DescarteSustentavel.Migrations
                 {
                     b.Navigation("ItensDescarte");
                 });
+
 #pragma warning restore 612, 618
         }
     }

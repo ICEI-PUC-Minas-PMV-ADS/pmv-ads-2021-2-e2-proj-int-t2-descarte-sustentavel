@@ -9,6 +9,7 @@ namespace DescarteSustentavel.Data
 {
     public class DescarteSustentavelContext : DbContext
     {
+
         public DescarteSustentavelContext (DbContextOptions<DescarteSustentavelContext> options)
             : base(options)
         {
@@ -17,5 +18,11 @@ namespace DescarteSustentavel.Data
         public DbSet<ItemDescarte> ItemDescarte { get; set; }
 
         public DbSet<SolicitacaoDescarteColeta> SolicitacaoDescarteColeta { get; set; }
+
+        public DbSet<Usuario> Usuario { get; set; }
+
+        public DbSet<Descartador> Descartador { get; set; }
+
+        public DbSet<Ecoponto> Ecoponto { get; set; }
     }
 }

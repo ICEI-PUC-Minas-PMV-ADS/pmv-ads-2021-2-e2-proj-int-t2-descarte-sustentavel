@@ -26,6 +26,7 @@ namespace DescarteSustentavel
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
             services.AddDbContext<DescarteSustentavelContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DescarteSustentavelContext")));
