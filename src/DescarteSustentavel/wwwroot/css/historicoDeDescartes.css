@@ -1,0 +1,175 @@
+﻿.flex-container-flex {
+    width: 100vw;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: fit-content;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-style: medium;
+    font-size: 2em;
+    color: #393939;
+}
+
+#titulo_historico {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #000;
+    text-align: left;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0 25px 0;
+}
+
+#titulo_historico > img {
+    margin-right: 25px;
+}
+
+#titulo_icon_botao {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%
+}
+
+#botao_nova_solicitacao {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    background-color: #00A4FF;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#botao_nova_solicitacao:hover {
+    background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+}
+
+#botao_nova_solicitacao > img {
+    margin-right: 25px;
+}
+
+#botao_nova_solicitacao > p {
+    margin-bottom: 0;
+}
+
+.label_reciclaveis_eletronicos {
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #000;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 6px;
+    margin-top: 5vh;
+}
+
+.div_faixa {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    width: 80%
+}
+
+.faixa_colorida {
+    width: 100px;
+    height: 5px;
+    background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+    border-radius: 100em;
+    margin: 0 0 25px;
+}
+
+.cardsGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.card {
+    border: solid 0;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19);
+    width: 275px;
+    height: 375px;
+    padding: 5px 5px 0;
+    margin-bottom: 20px;
+}
+
+.card_cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 3px 0 20px;
+}
+
+.card_titulo {
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.card_faixa_tipo {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 20px 5px 0;
+}
+
+.card_status_solicitacao {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 50px;
+    height: 5px;
+    background-color: #10FF69;
+    border-radius: 100em;
+    margin: 0 0 0 20px;
+}
+
+.card_informacoes {
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    font-size: 0.9em;
+    color: #000;
+    list-style: none;
+    text-align: left;
+    padding: 0 0 0 25px;
+    margin-top: 25px;
+}
+
+.card_separador {
+    display: block;
+    width: 225px;
+    height: 2px;
+    background-color: #C8C8C8;
+    border-radius: 100em;
+    margin: 15px 0 15px 0;
+}
+
+li {
+    margin: 5px 0;
+}

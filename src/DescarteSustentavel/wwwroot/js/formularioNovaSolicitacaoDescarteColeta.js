@@ -24,7 +24,7 @@ function criarLinhaGridItens() {
     $("#tabela_itens_body").append(`<tr><th scope="row">${id}</th><td>${tipoItem}</td><td>${descItem}</td></tr>`)
 
     //var qtdItens = document.getElementById("qtd_itens").innerHTML(`${id}`)
-    //$("#qtd_itens").value = id;
+    //$("qtd_itens").value = id;
 }
 
 function habilitarOpcoesDeItensReciclaveisOuEletronicos() {

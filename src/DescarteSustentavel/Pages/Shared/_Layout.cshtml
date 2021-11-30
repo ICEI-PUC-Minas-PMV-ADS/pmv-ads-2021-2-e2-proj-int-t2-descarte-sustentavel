@@ -4,35 +4,86 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Descarte Sustentável</title>
+    <link rel="shortcut icon" href="~/img/favicon.ico" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">DescarteSustentavel</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-light">
+            <!-- <input type=""> -->
+            <div id="botao_menu" style="display:flex; width:10%">
+                <input id="menu-hamburguer" type="checkbox">
+                <label for="menu-hamburguer">
+                    <div class="menu_sanduiche" onclick="alternarNavbar()">
+                        <span id="hamburguer"></span>
+                    </div>
+                </label>
+                @*<span id="menu-hamburguer" onclick="alternarNavbar()" style="width: 50px; height: 50px; background-color: red;"></span>*@
+            </div>
+            <div id="logo_icon" style="width: 80%; display:flex; justify-content:space-between">
+                <img id="logo" src="~/img/logo-prototipo_icon.svg" alt="">
+                <img id="icon_profile" src="~/img/icon_profile.svg" alt="" onclick="menuToggle()">
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div class="conteudo_pagina">
+        <nav id="itens_menu" class="">
+            <a asp-page="/Index" class="item_menu">
+                <div class="media">
+                    <span class="media-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </span>
+                    <span class="media-body ">Início</span>
+                </div>
+            </a>
+            <a asp-page="/SolicitacoesDescarteColeta/Create" class="item_menu">
+                <div class="media">
+                    <span class="media-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </span>
+                    <span class="media-body ">Cadastrar nova solicitação</span>
+                </div>
+            </a>
+            <a asp-page="/SolicitacoesDescarteColeta/Index" class="item_menu">
+                <div class="media">
+                    <span class="media-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </span>
+                    <span class="media-body ">Histórico de Descartes</span>
+                </div>
+            </a>
+            <a asp-page="" class="item_menu">
+                <div class="media">
+                    <span class="media-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </span>
+                    <span class="media-body ">Sobre nós</span>
+                </div>
+            </a>
+            <a asp-page="" class="item_menu">
+                <div class="media">
+                    <span class="media-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </span>
+                    <span class="media-body ">Fale Conosco</span>
+                </div>
+            </a>
+        </nav>
+
+        @RenderBody()
+
     </div>
 
     <footer class="border-top footer text-muted">
@@ -43,8 +94,9 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-
+    @*<script src="~/js/site.js" asp-append-version="true"></script>*@
+    <script src="~/js/layout.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/js/login.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

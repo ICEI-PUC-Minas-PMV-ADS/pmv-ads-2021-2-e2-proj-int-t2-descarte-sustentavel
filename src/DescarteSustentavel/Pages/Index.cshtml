@@ -6,10 +6,120 @@
 }
 <link rel="stylesheet" href="~/css/site.css" />
 
-<div class="action">
-    <div class="profile" onclick="menuToggle();">
-        <img src="img/profile_icon (1).svg">
+@{
+    ViewData["Title"] = "Início";
+}
+
+<link rel="stylesheet" href="~/css/login.css" />
+<div class="flex-container-flex" style=" width: 100vw">
+    <div class="flex-container">
+        <div style="width: 100%">
+            <img src="~/img/Banner.png" alt="img_banner" class="img-fluid">
+        </div>
+
+
+        <div id="informacoes_gerais">
+            <div class="icons_informacoes">
+                <img src="~/img/sustentabilidade_icon.svg">
+                <h1 style="font-size: 1.5em; color: #006DFF">Sustentabilidade</h1>
+                <P style="font-size: 1.2em; color: #006DFF">Ajude-nos a ajudar o planeta. Abrace essa ideia ;)</P>
+            </div>
+
+            <div class="icons_informacoes">
+                <img src="~/img/eletronicos_icon.svg">
+                <h1 style="font-size: 1.5em; color: #006DFF ">Eletrônicos</h1>
+                <P style="font-size: 1.2em; color: #006DFF">Estragou? Manda pra gente =D</P>
+            </div>
+
+            <div class="icons_informacoes">
+                <img src="~/img/responsabilidade-social_icon.svg">
+                <h1 style="font-size: 1.5em; color: #006DFF">Responsabilidade Social</h1>
+                <P style="font-size: 1.2em; color: #006DFF">Aqui seu reciclável tem o destino certo!</P>
+            </div>
+        </div>
+
+        <div id="ultimas_noticias" class="">
+            <h2 style="font-family: 'Rubik', sans-serif;font-size: 1.5em;margin: 50px 0 6px 0;">ÚLTIMAS NOTÍCIAS</h2>
+            <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content:start;">
+                <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 25px;">
+                </span>
+
+            </div>
+
+            <div style="display: flex; justify-content: flex-start; align-items: baseline; flex-direction: column; align-content: center; margin: 0 0 25px;">
+
+                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%; ">
+                    <img style=" width: 10em ; height: 10em" src="~/img/reciclar.png" alt="">
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                            Você sabe qual a diferença entre reciclar e reutilizar?
+                        </P>
+                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                            Sejam bastante conhecidos, os conceitos de reciclagem e reutilização de resíduos ainda geram
+                            muitas dúvidas no que diz respeito à sua diferença: afinal, o que difere o ato de reciclar
+                            do ato de reutilizar? Qual das duas alternativas é mais sustentável?
+                        </p>
+                        <!-- <a href="" style="text-align: right;">Ver mais...</a> -->
+                    </div>
+                </div>
+
+                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%;">
+                    <img style=" width: 10em ; height: 9em" src="~/img/eletronicos.png" alt="">
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin: 3px 8px 0px">
+                            O Excesso de lixo eletrônico está prejudicando o planeta?
+                        </P>
+                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                            É difícil imaginar como adentrar-se à vida moderna sem um telefone celular nas mãos. Mas
+                            como descartamos o lixo eletrônico?Dispositivos se decomporem em aterros, compostos
+                            perigosos podem vazar para as águas subterrâneas, incluindo chumbo e mercúrio.
+                        </p>
+                        <!-- <a href="">Ver mais...</a> -->
+                    </div>
+                </div>
+
+                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ;border-width: 1px; margin-bottom: 2%;">
+                    <img style=" width: 10em ; height: 9em" src="~/img/pet.png" alt="">
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                            Qual o tempo de decomposição dos materiais?
+                        </P>
+                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                            Somos alertados para o perigo de depositar resíduos em locais inadequados ou não fazer a
+                            separação dos materiais. Jogá-los em qualquer lugar pode gerar grandes prejuízos, pois eles
+                            levam muito tempo para se desfazer. Mas você sabe qual é o tempo de decomposição destes
+                            materiais?
+                        </p>
+                        <!-- <a href="">Ver mais...</a> -->
+                    </div>
+                </div>
+
+                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%;">
+                    <img style=" width: 10em ; height: 9em" src="~/img/ponte.png" alt="">
+                    <div style="display:flex; flex-wrap: wrap;">
+                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                            Por que nossos rios e córregos ajudam aumentar o aquecimento global?
+                        </P>
+                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                            No passado o papel dos rios no clima da Terra era visto como um meio de transporte de
+                            carbono da terra para o oceano, hoje em dia há diversos grupos de pesquisa focados em
+                            desvendar o papel dos rios e córregos em processos complexos de transformação do carbono de
+                            matéria orgânica em gases de efeito estufa.
+                        </p>
+                        <!-- <a href="">Ver mais...</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+
+
+<div class="action">
+    @*<div class="profile" onclick="menuToggle();">
+        <img src="img/profile_icon (1).svg">
+    </div>*@
     <div class="menu">
         <div class="container mt-6">
             <div class="row d-flex justify-content-center align-items-center">
@@ -25,14 +135,14 @@
                         <input type="email" class="form-control" asp-for="Email" placeholder="Insira seu email ou CPF/CNPJ" />
                         <input type="password" class="form-control" asp-for="Senha" placeholder="Digite aqui sua senha" />
                         <span class="text-danger">@Html.ValidationMessage("CredenciaisErradas")</span>
-                        <input type="submit" asp-page-handler="Logar" value="Login" class="btn  btn-primary"  id="class" />
+                        <input type="submit" asp-page-handler="Logar" value="Login" class="btn  btn-primary" id="class" />
                         <p class="link">
-                            <a href="#" id="btnn"  onclick="mostrar('cadastro')">Não tem conta? Cadastre-se</a>
+                            <a href="#" id="btnn" onclick="mostrar('cadastro')">Não tem conta? Cadastre-se</a>
                         </p>
                     </form>
                 </div>
                 <!--Começo Cadastro-->
-                <div class="col-md-12" id="cadastro"  style="display: none;">
+                <div class="col-md-12" id="cadastro" style="display: none;">
                     <form id="cadastro" method="post">
 
                         <div id="cadastro-passo-1">
@@ -79,4 +189,209 @@
     </div>
 </div>
 
+<style>
+    .action {
+        position: absolute;
+        top: 20px;
+        right: 150px;
+    }
+
+
+        .action .profile {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+            .action .profile img {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .action .menu {
+            position: absolute;
+            top: 60px;
+            right: -10px;
+            padding: 10px 0px;
+            background: #fff;
+            width: 350px;
+            border-radius: 6px;
+            transition: 0, 5s;
+            visibility: hidden;
+            opacity: 0;
+            margin-block-end: 220%;
+        }
+
+            .action .menu.active {
+                height:min-content;
+                top: 60px;
+                visibility: visible;
+                opacity: 1;
+            }
+            /*deixa o menu visivel*/
+
+            .action .menu::before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                right: 28px;
+                width: 20px;
+                height: 20px;
+                background: #fff;
+                transform: rotate(45deg);
+            }
+
+            .action .menu .container {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+                font-weight: 100;
+                font-size: 18px;
+                color: #555;
+                line-height: 1.2em;
+            }
+
+
+            .action .menu #regForm {
+                background-color: #ffffff;
+                margin: 0px auto;
+                font-family: Raleway;
+                padding: 10px;
+                border-radius: 10px
+            }
+
+            .action .menu h1 {
+                text-align: left;
+                margin-block-end: 10px;
+            }
+
+    .menu, .action {
+        box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2);
+        border-radius: 5px;
+    }
+
+    #regForm {
+        flex-wrap: wrap;
+    }
+
+    .flex-container-flex {
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        margin-top: 0;
+        width: 100vw;
+        margin-bottom: 10%
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+        width: fit-content;
+        justify-content: center
+    }
+
+    #informacoes_gerais {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-direction: row;
+        text-align: center;
+        color: #00A4FF;
+        background-color: #F7FFFA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        padding: 40px 10px;
+        width: 100%;
+    }
+
+    #ultimas_noticias {
+        width: 80%
+    }
+
+    .icons_informacoes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .icons_informacoes > p {
+            max-width: 85%;
+        }
+
+        .icons_informacoes > img {
+            width: 7vw;
+        }
+
+    .titulo_cadastrar_solicitacao {
+        display: inline-flex;
+        justify-items: left;
+        align-items: center;
+        width: 80%;
+    }
+
+        .titulo_cadastrar_solicitacao > img {
+            padding-right: 25px;
+        }
+
+    h1 {
+        font-family: 'Rubik', sans-serif;
+        color: #393939;
+        padding: 30px 0 10px 0;
+    }
+
+    h5 {
+        font-size: 1.55em;
+        margin-top: 20px;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.1em;
+        color: #333333;
+    }
+
+    #container_buttons {
+        font-size: 20px;
+        margin-left: auto;
+        margin-top: 1em;
+    }
+
+
+    .btn-primary {
+        padding: 5px;
+        height: 50px;
+        margin-top: 3.6em;
+    }
+
+    .titulo_sessao {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%
+    }
+
+    .fita_colorida {
+        width: 100px;
+        height: 5px;
+        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        border-radius: 100em;
+        margin: 0 0 25px;
+    }
+
+</style>
+
+<script type="text/javascript" src="~/js/login.js"></script>
 <script type="text/javascript" src="~/js/login.js?nocache=@randomNumber"></script>

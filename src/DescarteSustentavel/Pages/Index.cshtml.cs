@@ -138,7 +138,7 @@ namespace DescarteSustentavel.Pages
                
                 Debug.WriteLine("Inserido!");
             }
-            return Redirect("/SolicitacoesDescarteColeta");
+            return Redirect("/Index");
         }
 
         

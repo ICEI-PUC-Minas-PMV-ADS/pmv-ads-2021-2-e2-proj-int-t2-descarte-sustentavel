@@ -1,0 +1,216 @@
+﻿form {
+    display: flex;
+}
+
+.flex-container-flex {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    margin-top: 0;
+    width: 100vw;
+    margin-bottom: 10%
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+    width: fit-content;
+    justify-content: center
+}
+
+.titulo_cadastrar_solicitacao {
+    display: inline-flex;
+    justify-items: left;
+    align-items: center;
+    width: 80%;
+}
+
+.titulo_cadastrar_solicitacao > img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    color: #393939;
+    padding: 50px 0 50px 0;
+}
+
+h5 {
+    font-size: 1.55em;
+    margin-top: 20px;
+}
+
+#sessao_informacoes_gerais, #sessao_adicionar_itens, #sessao_informacoes_entrega {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#formulario_geral {
+    width: 80%;
+    border: solid #d8d8d8 2px;
+    border-radius: 6px;
+    margin-top: auto;
+    margin-left: 0;
+    padding: 30px;
+    padding-top: 15px;
+}
+
+.control-label, p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1em;
+    color: #333333;
+    min-width: max-content;
+}
+
+.form-control {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+#container_buttons {
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: 1em;
+}
+
+input, .button_buscar_ecoponto {
+    height: 50px;
+}
+
+.button_buscar_ecoponto {
+    height: 40px;
+}
+
+#botao_buscar_ecoponto {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #00A4FF;
+    border: none;
+    margin: 0 0 0 25px;
+}
+
+#botao_buscar_ecoponto > p {
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: white
+}
+
+#botao_buscar_ecoponto > img {
+    width: 16px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.dropdown {
+    height: 38px;
+    min-width: fit-content;
+}
+
+.btn-primary {
+    padding: 5px;
+    height: 50px;
+    margin-top: 3.6em;
+}
+
+.titulo_sessao {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%
+}
+
+.fita_colorida {
+    width: 100px;
+    height: 5px;
+    background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+    border-radius: 100em;
+    margin: 0 0 25px;
+}
+
+#button_adicionar_item_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background-color: #00A4FF;
+}
+
+#button_adicionar_item {
+    align-self: flex-end;
+}
+
+.campos_formulario_itens {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#tabela_itens {
+    margin: 30px 15px;
+    width: 95%
+}
+
+#botoes_formulario_solicitacao {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 25px;
+    width: 80%;    
+}
+
+#ecoponto {
+    display: flex;
+    align-items: center;
+}
+
+.botao_limpar {
+    padding: 3px 100px;
+    border: 2px solid #005AFF;
+    border-radius: 8px;
+    color: #005AFF;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+    color: white;
+    transition: ease-in 0.7s;
+}
+
+.botao_enviar {
+    padding: 3px 100px;
+    border: #005AFF;
+    border-radius: 8px;
+    background-color: #005AFF;
+    color: white;
+    margin-left: 25px;
+}
+
+input[type="reset"]:hover {
+    background-color: #00A4FF;
+    color: white;
+    border: 1px solid #00A4FF;
+    transition: 0.7s;
+}
+
+
+.botao_enviar, .botao_limpar {
+    font-family: Rubik;
+}
