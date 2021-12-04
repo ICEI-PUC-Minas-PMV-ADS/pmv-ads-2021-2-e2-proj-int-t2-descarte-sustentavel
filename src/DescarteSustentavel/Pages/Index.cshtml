@@ -126,33 +126,58 @@
                 <div class="col-md-12" id="login">
                     <form method="post">
                         <!--Pagina de login começo-->
-                        <div>
-                            <h3>
-                                <b>LOGIN</b><br>
-                                <small>Por favor, faça seu login.</small>
-                            </h3>
+                        <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                            <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                LOGIN
+                            </h2>
+                            <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                </span>
+                            </div>
+                            <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                Por favor, faça seu login.
+                            </p>
                         </div>
-                        <input type="email" class="form-control" asp-for="Email" placeholder="Insira seu email ou CPF/CNPJ" />
-                        <input type="password" class="form-control" asp-for="Senha" placeholder="Digite aqui sua senha" />
+                        <input type="email" class="form-control input_modal" style="height: 50px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="Email" placeholder="Insira seu email ou CPF/CNPJ" />
+                        <input type="password" class="form-control input_modal" style="height: 50px; margin-top: 20px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="Senha" placeholder="Digite aqui sua senha" />
                         <span class="text-danger">@Html.ValidationMessage("CredenciaisErradas")</span>
-                        <input type="submit" asp-page-handler="Logar" value="Login" class="btn  btn-primary" id="class" />
+                        <div id="botoes_login_cadastre-se" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px" >
+                            <input class="botao_login form-group col-12 btn" value="Entrar" type="submit" asp-page-handler="Logar" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat">
+                            <input class="botao_cadastrar form-group col-12 btn" value="Não tem conta? Cadastre-se" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat" onclick="mostrar('cadastro')">
+                        </div>
+                        @*<input type="submit" asp-page-handler="Logar" value="Login" class="btn  btn-primary" id="class" />
                         <p class="link">
-                            <a href="#" id="btnn" onclick="mostrar('cadastro')">Não tem conta? Cadastre-se</a>
-                        </p>
+                            <a href="#" id="btnn" >Não tem conta? Cadastre-se</a>
+                        </p>*@
                     </form>
                 </div>
                 <!--Começo Cadastro-->
                 <div class="col-md-12" id="cadastro" style="display: none;">
-                    <form id="cadastro" method="post">
-
+                    <form id="cadastro" method="post">                        
                         <div id="cadastro-passo-1">
-                            <div class="row">
+                            <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                                <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                    CADASTRE-SE
+                                </h2>
+                                <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                    <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                    </span>
+                                </div>
+                                <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                    Como deseja se cadastrar?
+                                </p>
+                            </div>
+                            <div class="" style="display:flex; flex-direction: row; flex-wrap: nowrap; justify-content: space-around; padding: 25px 0; border-radius: 6px; background-color: #ECFFF3">
                                 @foreach (var tipoUser in Model.TipoDeUsuarios)
                                 {
-                                    <div class="col">
+                                    <div class="" style="display: flex; flex-direction:column; align-items: center; flex-wrap: nowrap; justify-content: space-evenly; ">
 
-                                        <img src="img/@tipoUser.ToLower()_icon.svg">
-                                        @tipoUser<input type="radio" asp-for="TipoDeUsuario" value="@tipoUser" />
+                                        <img src="img/@tipoUser.ToLower()_icon.svg">                                        
+                                        <div >
+                                            <input style="margin-top: 20px" type="radio" asp-for="TipoDeUsuario" value="@tipoUser"/>
+                                            <label style="font-family: Montserrat; font-size: 0.8em" asp-for="TipoDeUsuario">@tipoUser</label>
+                                        </div>
+                                        
                                     </div>
                                 }
                             </div>
@@ -160,29 +185,52 @@
                                 <a href="#" id="nextBtn" onclick="wizardPasso('cadastro', 2)">Próximo</a>
                             </p>
                         </div>
-                        <div id="cadastro-passo-2" style="display: none;">
-                            <p>Nome completo</p>
-                            <input class="form-control" asp-for="NomeCadastro" />
-                            <p>Endereco</p>
-                            <input class="form-control" asp-for="EnderecoCadastro" />
-                            <p>Telefone</p>
-                            <input class="form-control" asp-for="TelefoneCadastro" />
-                            <p id="ecoponto-1" style="display: none;">CPF ou CNPJ</p>
-                            <input class="form-control" id="ecoponto-2" asp-for="CpfOuCnpjCadastro" style="display: none;" />
+                            <div id="cadastro-passo-2" style="display: none;">
+                                <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                                    <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                        CADASTRE-SE
+                                    </h2>
+                                    <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                        <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                        </span>
+                                    </div>
+                                    <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                        Nos conte um pouco sobre você:
+                                    </p>
+                                    </div>
+                                    <p>Nome completo</p>
+                                    <input class="form-control input_modal" style="height:50px" asp-for="NomeCadastro" />
+                                    <p>Endereco</p>
+                                    <input class="form-control input_modal" style="height:50px" asp-for="EnderecoCadastro" />
+                                    <p>Telefone</p>
+                                    <input class="form-control input_modal" style="height:50px" asp-for="TelefoneCadastro" />
+                                    <p id="ecoponto-1" style="display: none;">CPF ou CNPJ</p>
+                                    <input class="form-control" id="ecoponto-2" asp-for="CpfOuCnpjCadastro" style="display: none;" />
 
-                            <a href="#" class="btn  btn-primary" onclick="wizardPasso('cadastro', 3)">Próximo</a>
-                        </div>
-                        <div id="cadastro-passo-3" style="display: none;">
-
-                            <p>Email</p>
-                            <input type="email" class="form-control" asp-for="EmailCadastro" />
-                            <span class="text-danger">@Html.ValidationMessage("EmailDuplicado")</span>
-                            <p>Senha</p>
-                            <input type="password" class="form-control" asp-for="SenhaCadastro" />
-                            <span class="text-danger">@Html.ValidationMessage("DadosErrados")</span>
-                            <input type="submit" class="btn  btn-primary" asp-page-handler="Cadastrar" value="Cadastrar" />
-                        </div>
-                    </form>
+                                    <a href="#" class="btn  btn-primary" onclick="wizardPasso('cadastro', 3)">Próximo</a>
+                                </div>
+                            <div id="cadastro-passo-3" style="display: none;">
+                                <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                                    <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                        CADASTRE-SE
+                                    </h2>
+                                    <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                        <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                        </span>
+                                    </div>
+                                    <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                        Quase lá! Agora vamos criar uma senha:
+                                    </p>
+                                    </div>
+                                    <p>Email</p>
+                                    <input type="email" class="form-control input_modal" style="height:50px" asp-for="EmailCadastro" />
+                                    <span class="text-danger">@Html.ValidationMessage("EmailDuplicado")</span>
+                                    <p>Senha</p>
+                                    <input type="password" class="form-control input_modal" style="height:50px" asp-for="SenhaCadastro" />
+                                    <span class="text-danger">@Html.ValidationMessage("DadosErrados")</span>
+                                    <input type="submit" class="btn  btn-primary" asp-page-handler="Cadastrar" value="Cadastrar" />
+                                </div>
+</form>
                 </div>
             </div>
         </div>
@@ -190,6 +238,40 @@
 </div>
 
 <style>
+    .botao_cadastrar {
+        padding: 3px 0;
+        border: 2px solid #005AFF;
+        border-radius: 8px;
+        color: #005AFF;
+        cursor: pointer;
+        background-color: #FFF;
+    }
+
+    .botao_login:hover {
+        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        color: white;
+        transition: 0.2s;
+        font-weight:800;
+    }
+
+    .botao_login {
+        padding: 3px 0;
+        border: #005AFF;
+        border-radius: 8px;
+        background-color: #005AFF;
+        color: white;
+    }
+
+    .botao_cadastrar:hover {
+        background-color: #00A4FF;
+        color: white;
+        border: 1px solid #00A4FF;
+        transition: 0.7s;
+        font-weight: 400;
+    }
+
+
+
     .action {
         position: absolute;
         top: 20px;
@@ -221,7 +303,7 @@
             right: -10px;
             padding: 10px 0px;
             background: #fff;
-            width: 350px;
+            width: 21.5vw;
             border-radius: 6px;
             transition: 0, 5s;
             visibility: hidden;

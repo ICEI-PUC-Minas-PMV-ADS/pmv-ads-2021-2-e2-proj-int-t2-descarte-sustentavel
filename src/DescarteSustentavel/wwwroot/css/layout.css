@@ -132,9 +132,8 @@ span {
 
 /* Input responsável pelo check do click do usuário permitindo a animação */
 
-input {
+#menu-hamburguer {
     display: none;
-    text-transform: uppercase;
 }
 
     /* Animação após o click */
