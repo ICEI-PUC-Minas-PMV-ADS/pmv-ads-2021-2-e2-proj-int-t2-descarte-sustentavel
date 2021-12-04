@@ -4,57 +4,53 @@
     var r = new Random();
     var randomNumber = r.Next();
 }
-<link rel="stylesheet" href="~/css/site.css" />
 
 @{
     ViewData["Title"] = "Início";
 }
 
 <link rel="stylesheet" href="~/css/login.css" />
-<div class="flex-container-flex" style=" width: 100vw">
+<div class="flex-container-flex">
     <div class="flex-container">
-        <div style="width: 100%">
+        <div id="banner">
             <img src="~/img/Banner.png" alt="img_banner" class="img-fluid">
         </div>
-
 
         <div id="informacoes_gerais">
             <div class="icons_informacoes">
                 <img src="~/img/sustentabilidade_icon.svg">
-                <h1 style="font-size: 1.5em; color: #006DFF">Sustentabilidade</h1>
-                <P style="font-size: 1.2em; color: #006DFF">Ajude-nos a ajudar o planeta. Abrace essa ideia ;)</P>
+                <h1 class="titulo_informacoes_gerais">Sustentabilidade</h1>
+                <p class="frase_informacoes_gerais">Ajude-nos a ajudar o planeta. Abrace essa ideia ;)</p>
             </div>
 
             <div class="icons_informacoes">
                 <img src="~/img/eletronicos_icon.svg">
-                <h1 style="font-size: 1.5em; color: #006DFF ">Eletrônicos</h1>
-                <P style="font-size: 1.2em; color: #006DFF">Estragou? Manda pra gente =D</P>
+                <h1 class="titulo_informacoes_gerais">Eletrônicos</h1>
+                <p class="frase_informacoes_gerais">Estragou? Manda pra gente =D</p>
             </div>
 
             <div class="icons_informacoes">
                 <img src="~/img/responsabilidade-social_icon.svg">
-                <h1 style="font-size: 1.5em; color: #006DFF">Responsabilidade Social</h1>
-                <P style="font-size: 1.2em; color: #006DFF">Aqui seu reciclável tem o destino certo!</P>
+                <h1 class="titulo_informacoes_gerais">Responsabilidade Social</h1>
+                <p class="frase_informacoes_gerais">Aqui seu reciclável tem o destino certo!</p>
             </div>
         </div>
 
-        <div id="ultimas_noticias" class="">
-            <h2 style="font-family: 'Rubik', sans-serif;font-size: 1.5em;margin: 50px 0 6px 0;">ÚLTIMAS NOTÍCIAS</h2>
-            <div style="display: flex; flex-wrap: nowrap; align-items:center; justify-content:start;">
-                <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 25px;">
-                </span>
-
+        <div id="ultimas_noticias">
+            <h2 class="titulo_sessao">ÚLTIMAS NOTÍCIAS</h2>
+            <div class="corpo_fita">
+                <span class="fita_colorida"></span>            
             </div>
 
-            <div style="display: flex; justify-content: flex-start; align-items: baseline; flex-direction: column; align-content: center; margin: 0 0 25px;">
+            <div id="corpo_noticias">
 
-                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%; ">
-                    <img style=" width: 10em ; height: 10em" src="~/img/reciclar.png" alt="">
-                    <div style="display:flex; flex-wrap: wrap;">
-                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                <div class="caixa_noticia">
+                    <img class="foto_manchete" src="~/img/reciclar.png" alt="reciclar_reutilizar">
+                    <div  class="textos_manchete">
+                        <P class="titulo_manchete">
                             Você sabe qual a diferença entre reciclar e reutilizar?
                         </P>
-                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                        <p class="texto_noticia">
                             Sejam bastante conhecidos, os conceitos de reciclagem e reutilização de resíduos ainda geram
                             muitas dúvidas no que diz respeito à sua diferença: afinal, o que difere o ato de reciclar
                             do ato de reutilizar? Qual das duas alternativas é mais sustentável?
@@ -63,13 +59,13 @@
                     </div>
                 </div>
 
-                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%;">
-                    <img style=" width: 10em ; height: 9em" src="~/img/eletronicos.png" alt="">
-                    <div style="display:flex; flex-wrap: wrap;">
-                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin: 3px 8px 0px">
+                <div class="caixa_noticia">
+                    <img class="foto_manchete" src="~/img/eletronicos.png" alt="eletronicos">
+                    <div  class="textos_manchete">
+                        <P class="titulo_manchete">
                             O Excesso de lixo eletrônico está prejudicando o planeta?
                         </P>
-                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                        <p class="texto_noticia">
                             É difícil imaginar como adentrar-se à vida moderna sem um telefone celular nas mãos. Mas
                             como descartamos o lixo eletrônico?Dispositivos se decomporem em aterros, compostos
                             perigosos podem vazar para as águas subterrâneas, incluindo chumbo e mercúrio.
@@ -78,13 +74,13 @@
                     </div>
                 </div>
 
-                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ;border-width: 1px; margin-bottom: 2%;">
-                    <img style=" width: 10em ; height: 9em" src="~/img/pet.png" alt="">
-                    <div style="display:flex; flex-wrap: wrap;">
-                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                <div class="caixa_noticia">
+                    <img class="foto_manchete" src="~/img/pet.png" alt="garrafa_pet">
+                    <div  class="textos_manchete">
+                        <P class="titulo_manchete">
                             Qual o tempo de decomposição dos materiais?
                         </P>
-                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                        <p class="texto_noticia">
                             Somos alertados para o perigo de depositar resíduos em locais inadequados ou não fazer a
                             separação dos materiais. Jogá-los em qualquer lugar pode gerar grandes prejuízos, pois eles
                             levam muito tempo para se desfazer. Mas você sabe qual é o tempo de decomposição destes
@@ -94,13 +90,13 @@
                     </div>
                 </div>
 
-                <div style="background-color:#F7FFFA; display: flex; flex-direction: row; border-style: solid; border-color: #00FFB9 ; border-width: 1px; margin-bottom: 2%;">
-                    <img style=" width: 10em ; height: 9em" src="~/img/ponte.png" alt="">
-                    <div style="display:flex; flex-wrap: wrap;">
-                        <P style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat; font-size: 1.5em; margin:3px 8px 0px;">
+                <div class="caixa_noticia">
+                    <img class="foto_manchete" src="~/img/ponte.png" alt="rios">
+                    <div class="textos_manchete">
+                        <P class="titulo_manchete">
                             Por que nossos rios e córregos ajudam aumentar o aquecimento global?
                         </P>
-                        <p style="display: flex; flex-direction: row; color: #8C8C8C; text-align: left; font-family: Montserrat Regular; margin: 0 8px; text-align: justify;">
+                        <p class="texto_noticia">
                             No passado o papel dos rios no clima da Terra era visto como um meio de transporte de
                             carbono da terra para o oceano, hoje em dia há diversos grupos de pesquisa focados em
                             desvendar o papel dos rios e córregos em processos complexos de transformação do carbono de
@@ -116,10 +112,7 @@
 
 
 
-<div class="action">
-    @*<div class="profile" onclick="menuToggle();">
-        <img src="img/profile_icon (1).svg">
-    </div>*@
+<div id="modal_login_cadastro" class="action">
     <div class="menu">
         <div class="container mt-6">
             <div class="row d-flex justify-content-center align-items-center">
@@ -141,19 +134,19 @@
                         <input type="email" class="form-control input_modal" style="height: 50px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="Email" placeholder="Insira seu email ou CPF/CNPJ" />
                         <input type="password" class="form-control input_modal" style="height: 50px; margin-top: 20px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="Senha" placeholder="Digite aqui sua senha" />
                         <span class="text-danger">@Html.ValidationMessage("CredenciaisErradas")</span>
-                        <div id="botoes_login_cadastre-se" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px" >
-                            <input class="botao_login form-group col-12 btn" value="Entrar" type="submit" asp-page-handler="Logar" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat">
-                            <input class="botao_cadastrar form-group col-12 btn" value="Não tem conta? Cadastre-se" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat" onclick="mostrar('cadastro')">
+                        <div id="botoes_login_cadastre-se" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px">
+                            <input class="botao_login botao_principal form-group col-12 btn" value="Login" type="submit" asp-page-handler="Logar" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat">
+                            <input class="botao_cadastrar botao_secundario form-group col-12 btn" value="Não tem conta? Cadastre-se" form="corpo_formulario_cadastro_solicitacao" style="height: 50px; font-family: Montserrat" onclick="alternarModalLoginCadastro()">
                         </div>
                         @*<input type="submit" asp-page-handler="Logar" value="Login" class="btn  btn-primary" id="class" />
-                        <p class="link">
-                            <a href="#" id="btnn" >Não tem conta? Cadastre-se</a>
-                        </p>*@
+                            <p class="link">
+                                <a href="#" id="btnn" >Não tem conta? Cadastre-se</a>
+                            </p>*@
                     </form>
                 </div>
                 <!--Começo Cadastro-->
                 <div class="col-md-12" id="cadastro" style="display: none;">
-                    <form id="cadastro" method="post">                        
+                    <form id="cadastro" method="post">
                         <div id="cadastro-passo-1">
                             <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
                                 <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
@@ -172,65 +165,87 @@
                                 {
                                     <div class="" style="display: flex; flex-direction:column; align-items: center; flex-wrap: nowrap; justify-content: space-evenly; ">
 
-                                        <img src="img/@tipoUser.ToLower()_icon.svg">                                        
-                                        <div >
-                                            <input style="margin-top: 20px" type="radio" asp-for="TipoDeUsuario" value="@tipoUser"/>
+                                        <img src="img/@tipoUser.ToLower()_icon.svg">
+                                        <div>
+                                            <input style="margin-top: 20px" type="radio" asp-for="TipoDeUsuario" value="@tipoUser" />
                                             <label style="font-family: Montserrat; font-size: 0.8em" asp-for="TipoDeUsuario">@tipoUser</label>
                                         </div>
-                                        
+
                                     </div>
                                 }
                             </div>
-                            <p class="link">
-                                <a href="#" id="nextBtn" onclick="wizardPasso('cadastro', 2)">Próximo</a>
-                            </p>
+                            <div class="botoes_proximo_voltar" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px">
+                                <input id="nextBtn" class="botao_principal form-group col-12 btn" value="Próximo" style="height: 50px; font-family: Montserrat" onclick="avancarModal('cadastro', 1)">
+                                <input class="botao_secundario form-group col-12 btn" value="Voltar" style="height: 50px; font-family: Montserrat" onclick="voltarModal('cadastro', 1)">
+                            </div>
                         </div>
-                            <div id="cadastro-passo-2" style="display: none;">
-                                <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
-                                    <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
-                                        CADASTRE-SE
-                                    </h2>
-                                    <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
-                                        <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
-                                        </span>
-                                    </div>
-                                    <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
-                                        Nos conte um pouco sobre você:
-                                    </p>
-                                    </div>
-                                    <p>Nome completo</p>
-                                    <input class="form-control input_modal" style="height:50px" asp-for="NomeCadastro" />
-                                    <p>Endereco</p>
-                                    <input class="form-control input_modal" style="height:50px" asp-for="EnderecoCadastro" />
-                                    <p>Telefone</p>
-                                    <input class="form-control input_modal" style="height:50px" asp-for="TelefoneCadastro" />
-                                    <p id="ecoponto-1" style="display: none;">CPF ou CNPJ</p>
-                                    <input class="form-control" id="ecoponto-2" asp-for="CpfOuCnpjCadastro" style="display: none;" />
+                        <div id="cadastro-passo-2" style="display: none;">
+                            <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                                <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                    CADASTRE-SE
+                                </h2>
+                                <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                    <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                    </span>
+                                </div>
+                                <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                    Nos conte um pouco sobre você:
+                                </p>
+                            </div>
+                            <input type="text" class="form-control input_modal" style="height: 50px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="NomeCadastro" placeholder="Insira seu nome completo" />
+                            <input type="text" class="form-control input_modal" style="height: 50px; margin-top: 20px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="EmailCadastro" placeholder="Digite aqui seu email" />
+                            <span class="text-danger">@Html.ValidationMessage("EmailDuplicado")</span>
 
-                                    <a href="#" class="btn  btn-primary" onclick="wizardPasso('cadastro', 3)">Próximo</a>
+                            @if (Model.TipoDeUsuario == "Ecoponto")
+                            {
+                                <input type="text" class="form-control input_modal" style="height: 50px; margin-top: 20px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="CpfOuCnpjCadastro" placeholder="Insira seu CPF/CNPJ" />
+                            }
+
+                            @*<p>Nome completo</p>
+                                <input class="form-control input_modal" style="height:50px" asp-for="NomeCadastro" />
+                                <p>Endereco</p>
+                                <input class="form-control input_modal" style="height:50px" asp-for="EmailCadastro" />
+                                <p>Telefone</p>
+                                <input class="form-control input_modal" style="height:50px" asp-for="TelefoneCadastro" />
+                                <p id="ecoponto-1" style="display: none;">CPF ou CNPJ</p>
+                                <input class="form-control" id="ecoponto-2" asp-for="CpfOuCnpjCadastro" style="display: none;" />*@
+
+                            <div class="botoes_proximo_voltar" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px">
+                                <input id="nextBtn" class="botao_principal form-group col-12 btn" value="Próximo" style="height: 50px; font-family: Montserrat" onclick="avancarModal('cadastro', 2)">
+                                <input class="botao_secundario form-group col-12 btn" value="Voltar" style="height: 50px; font-family: Montserrat" onclick="voltarModal('cadastro', 2)">
+                            </div>
+                        </div>
+                        <div id="cadastro-passo-3" style="display: none;">
+                            <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
+                                <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
+                                    CADASTRE-SE
+                                </h2>
+                                <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
+                                    <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
+                                    </span>
                                 </div>
-                            <div id="cadastro-passo-3" style="display: none;">
-                                <div class="cabecalho_modal" style="display:flex; flex-flow:column; align-items:flex-start;">
-                                    <h2 style="font-family: 'Rubik', sans-serif; font-size: 1.4em; color: #212529">
-                                        CADASTRE-SE
-                                    </h2>
-                                    <div style="display: flex; flex-wrap: nowrap; align-items:flex-start;">
-                                        <span style="width: 75px; height: 5px; background-image: linear-gradient(to right,#00FFB9, #00A4FF); border-radius: 100em; margin: 0 0 18px;">
-                                        </span>
-                                    </div>
-                                    <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
-                                        Quase lá! Agora vamos criar uma senha:
-                                    </p>
-                                    </div>
-                                    <p>Email</p>
-                                    <input type="email" class="form-control input_modal" style="height:50px" asp-for="EmailCadastro" />
-                                    <span class="text-danger">@Html.ValidationMessage("EmailDuplicado")</span>
-                                    <p>Senha</p>
-                                    <input type="password" class="form-control input_modal" style="height:50px" asp-for="SenhaCadastro" />
-                                    <span class="text-danger">@Html.ValidationMessage("DadosErrados")</span>
-                                    <input type="submit" class="btn  btn-primary" asp-page-handler="Cadastrar" value="Cadastrar" />
-                                </div>
-</form>
+                                <p class="modal_label" style="font-family: Montserrat Regular; font-size:0.8em">
+                                    Quase lá! Agora vamos criar uma senha:
+                                </p>
+                            </div>
+                            <input type="password" class="form-control input_modal" style="height: 50px; font-family: 'Montserrat'; font-size: 0.7em;" asp-for="SenhaCadastro" placeholder="Insira sua senha" />
+                            <input type="password" class="form-control input_modal" style="height: 50px; margin-top: 20px; font-family: 'Montserrat'; font-size: 0.7em;" placeholder="Confirme a Senha" />
+                            <span class="text-danger">@Html.ValidationMessage("DadosErrados")</span>
+                            @*<p>Email</p>
+                                <input type="email" class="form-control input_modal" style="height:50px" asp-for="EmailCadastro" />
+                                <span class="text-danger">@Html.ValidationMessage("EmailDuplicado")</span>
+                                <p>Senha</p>
+                                <input type="password" class="form-control input_modal" style="height:50px" asp-for="SenhaCadastro" />
+                                <span class="text-danger">@Html.ValidationMessage("DadosErrados")</span>*@
+
+                            <div class="botoes_proximo_voltar" style="display:flex; flex-direction: row; flex-wrap: wrap; margin-top: 20px">
+                                <input type="submit" id="nextBtn" class="botao_principal form-group col-12 btn" style="height: 50px; font-family: Montserrat" asp-page-handler="Cadastrar" value="Concluir Cadastro">
+                                <input class="botao_secundario form-group col-12 btn" value="Fazer Login" style="height: 50px; font-family: Montserrat" onclick="voltarModal('cadastro', 3)">
+                            </div>
+
+                            @*<input type="submit" class="btn  btn-primary" asp-page-handler="Cadastrar" value="Cadastrar" />*@
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -238,7 +253,148 @@
 </div>
 
 <style>
-    .botao_cadastrar {
+    .flex-container-flex {
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        margin-top: 0;
+        width: 100vw;
+        margin-bottom: 10%
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+        width: fit-content;
+        justify-content: center
+    }
+
+    #informacoes_gerais {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        flex-direction: row;
+        text-align: center;
+        color: #00A4FF;
+        background-color: #F7FFFA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        padding: 40px 10px;
+        width: 100%;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    .titulo_informacoes_gerais {
+        font-size: 1.5em;
+        color: #006DFF;
+    }
+
+    .icons_informacoes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons_informacoes > p {
+        max-width: 85%;
+    }
+
+    .icons_informacoes > img {
+        width: 7vw;
+    }
+
+    .frase_informacoes_gerais {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+        color: #006DFF;
+    }
+
+    #ultimas_noticias {
+        width: 80%
+    }
+
+    .titulo_sessao {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5em;
+        margin: 50px 0 6px 0;
+    }
+
+    .corpo_fita {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .fita_colorida {
+        width: 75px;
+        height: 5px;
+        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
+        border-radius: 100em;
+        margin: 0 0 25px;
+    }
+
+    #corpo_noticias {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: column;
+        align-content: center;
+        margin: 0 0 25px;
+    }
+
+    .caixa_noticia {
+        background-color: #F7FFFA;
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+        border-color: #00FFB9;
+        border-width: 1px;
+        margin-bottom: 2%;
+    }
+
+    .foto_manchete {
+        width: 10em;
+        height: 10em;
+    }
+
+    .textos_manchete {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        padding: 0 15px;
+    }
+
+    .titulo_manchete {
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        color: #8C8C8C;
+        text-align: left;
+        font-family: Montserrat;
+        font-size: 1.3em;
+        margin: 3px 8px 0px;
+    }
+
+    .texto_noticia {
+        display: flex;
+        flex-direction: row;
+        color: #8C8C8C;
+        text-align: left;
+        font-family: Montserrat Regular;
+        margin: 0 8px;
+        text-align: justify;
+    }
+
+    .botao_cadastrar, .botao_secundario {
         padding: 3px 0;
         border: 2px solid #005AFF;
         border-radius: 8px;
@@ -247,14 +403,14 @@
         background-color: #FFF;
     }
 
-    .botao_login:hover {
+    .botao_login:hover, .botao_principal:hover {
         background-image: linear-gradient(to right,#00FFB9, #00A4FF);
         color: white;
         transition: 0.2s;
-        font-weight:800;
+        font-weight: 800;
     }
 
-    .botao_login {
+    .botao_login, .botao_principal {
         padding: 3px 0;
         border: #005AFF;
         border-radius: 8px;
@@ -262,15 +418,13 @@
         color: white;
     }
 
-    .botao_cadastrar:hover {
+    .botao_cadastrar:hover, .botao_secundario:hover {
         background-color: #00A4FF;
         color: white;
         border: 1px solid #00A4FF;
         transition: 0.7s;
         font-weight: 400;
     }
-
-
 
     .action {
         position: absolute;
@@ -312,7 +466,7 @@
         }
 
             .action .menu.active {
-                height:min-content;
+                height: min-content;
                 top: 60px;
                 visibility: visible;
                 opacity: 1;
@@ -363,117 +517,15 @@
         flex-wrap: wrap;
     }
 
-    .flex-container-flex {
-        display: flex;
-        justify-content: center;
-        flex-flow: row;
-        flex-wrap: nowrap;
-        margin-top: 0;
-        width: 100vw;
-        margin-bottom: 10%
-    }
-
-    .flex-container {
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        margin-top: 0;
-        width: fit-content;
-        justify-content: center
-    }
-
-    #informacoes_gerais {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline;
-        flex-direction: row;
-        text-align: center;
-        color: #00A4FF;
-        background-color: #F7FFFA;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        padding: 40px 10px;
-        width: 100%;
-    }
-
-    #ultimas_noticias {
-        width: 80%
-    }
-
-    .icons_informacoes {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-    }
-
-        .icons_informacoes > p {
-            max-width: 85%;
-        }
-
-        .icons_informacoes > img {
-            width: 7vw;
-        }
-
-    .titulo_cadastrar_solicitacao {
-        display: inline-flex;
-        justify-items: left;
-        align-items: center;
-        width: 80%;
-    }
-
-        .titulo_cadastrar_solicitacao > img {
-            padding-right: 25px;
-        }
-
     h1 {
         font-family: 'Rubik', sans-serif;
-        color: #393939;
         padding: 30px 0 10px 0;
-    }
-
-    h5 {
-        font-size: 1.55em;
-        margin-top: 20px;
-    }
-
-    p {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.1em;
-        color: #333333;
-    }
-
-    #container_buttons {
-        font-size: 20px;
-        margin-left: auto;
-        margin-top: 1em;
-    }
-
-
-    .btn-primary {
-        padding: 5px;
-        height: 50px;
-        margin-top: 3.6em;
-    }
-
-    .titulo_sessao {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100%
-    }
-
-    .fita_colorida {
-        width: 100px;
-        height: 5px;
-        background-image: linear-gradient(to right,#00FFB9, #00A4FF);
-        border-radius: 100em;
-        margin: 0 0 25px;
     }
 
 </style>
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/layout.js"></script>
 <script type="text/javascript" src="~/js/login.js"></script>
+<script type="text/javascript" src="~/js/inicio.js"></script>
 <script type="text/javascript" src="~/js/login.js?nocache=@randomNumber"></script>

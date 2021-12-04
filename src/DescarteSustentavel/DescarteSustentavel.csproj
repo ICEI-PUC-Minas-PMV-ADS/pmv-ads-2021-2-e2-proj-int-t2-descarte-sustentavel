@@ -25,11 +25,25 @@
     <Content Remove="wwwroot\icons\responsabilidade-social_icon.svg" />
     <Content Remove="wwwroot\icons\rios_poluidos.webp" />
     <Content Remove="wwwroot\icons\sustentabilidade_icon.svg" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.js" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.min.js" />
+    <Content Remove="wwwroot\js\bootstrap.bundle.min.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.esm.js" />
+    <Content Remove="wwwroot\js\bootstrap.esm.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.esm.min.js" />
+    <Content Remove="wwwroot\js\bootstrap.esm.min.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.js" />
+    <Content Remove="wwwroot\js\bootstrap.js.map" />
+    <Content Remove="wwwroot\js\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\bootstrap.min.js.map" />
+    <Content Remove="wwwroot\js\hsitoricoDescartes.js" />
+    <Content Remove="wwwroot\js\jquery.js" />
+    <Content Remove="wwwroot\js\site.js" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\js\formularioNovaSolicitacaoDescarteColeta.js" />
-    <None Include="wwwroot\js\site.js" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,7 +15,7 @@
             <!-- <input type=""> -->
             <div id="botao_menu" style="display:flex; width:10%">
                 <input id="menu-hamburguer" type="checkbox">
-                <label for="menu-hamburguer">
+                <label for="menu-hamburguer" style="border-radius: 50%">
                     <div class="menu_sanduiche" onclick="alternarNavbar()">
                         <span id="hamburguer"></span>
                     </div>
@@ -30,7 +30,7 @@
     </header>
     <div class="conteudo_pagina">
         <nav id="itens_menu" class="">
-            <a asp-page="/Index" class="item_menu">
+            <a asp-page="/Index" class="item_menu" id="item_menu_inicio">
                 <div class="media">
                     <span class="media-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
@@ -40,7 +40,7 @@
                     <span class="media-body ">Início</span>
                 </div>
             </a>
-            <a asp-page="/SolicitacoesDescarteColeta/Create" class="item_menu">
+            <a asp-page="/SolicitacoesDescarteColeta/Create" class="item_menu" id="item_menu_nova_solicitacao">
                 <div class="media">
                     <span class="media-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
@@ -50,7 +50,7 @@
                     <span class="media-body ">Cadastrar nova solicitação</span>
                 </div>
             </a>
-            <a asp-page="/SolicitacoesDescarteColeta/Index" class="item_menu">
+            <a asp-page="/SolicitacoesDescarteColeta/Index" class="item_menu" id="item_menu_historico">
                 <div class="media">
                     <span class="media-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@
                     <span class="media-body ">Histórico de Descartes</span>
                 </div>
             </a>
-            <a asp-page="" class="item_menu">
+            <a asp-page="" class="item_menu" id="item_menu_sobre">
                 <div class="media">
                     <span class="media-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
@@ -70,7 +70,7 @@
                     <span class="media-body ">Sobre nós</span>
                 </div>
             </a>
-            <a asp-page="" class="item_menu">
+            <a asp-page="" class="item_menu" id="item_menu_fale_conosco">
                 <div class="media">
                     <span class="media-left">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">

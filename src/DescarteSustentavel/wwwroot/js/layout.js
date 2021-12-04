@@ -1,7 +1,7 @@
 ﻿const navbar = document.getElementById('itens_menu')
 const botaoToggle = document.getElementById('botao_menu')
 const logo = document.getElementById('logo_icon')
-console.log(botaoToggle)
+console.log(navbar)
 
 function alternarNavbar() {
 
@@ -18,4 +18,9 @@ function alternarNavbar() {
         logo.style.width = "80%";
     }
 
- }
+}
+
+
+function menuAtivo(itemMenu) {
+    $(`#item_menu_${itemMenu}`).addClass('item_menu_ativo')
+}

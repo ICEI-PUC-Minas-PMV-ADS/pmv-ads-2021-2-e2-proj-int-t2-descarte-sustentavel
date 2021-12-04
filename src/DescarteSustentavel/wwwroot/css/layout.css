@@ -53,12 +53,18 @@ svg {
     margin-right: 18px
 }
 
-a:hover {
-    font-weight: bold;    
+a:hover {     
     color: #006DFF;
     text-decoration: none;
 }
-.item_menu:hover {
+
+.item_menu:hover{
+    background-color: #F7FFFA;
+    color: #006DFF;
+    text-decoration: none;
+}
+
+.item_menu_ativo {
     background-color: #ECFFF3;
     font-weight: bold;
     color: #006DFF;

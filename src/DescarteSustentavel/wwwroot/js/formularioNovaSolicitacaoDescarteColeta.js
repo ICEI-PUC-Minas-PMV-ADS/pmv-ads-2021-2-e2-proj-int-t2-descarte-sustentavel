@@ -1,4 +1,6 @@
-﻿var id = 0;
+﻿menuAtivo('nova_solicitacao')
+
+var id = 0;
 
 $("#button_adicionar_item").click(function (event) {
 
