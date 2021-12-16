@@ -1,27 +1,19 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+[Apresentação-DescarteSustentável.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/files/7724023/Apresentacao-DescarteSustentavel.pdf)
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
+## Descarte Sustentável
 
-## Título do Projeto
-
-Nome e marca do projeto
+![logoDescarteSustentavel](https://user-images.githubusercontent.com/70529816/146293466-15f28b35-5f5c-4a38-89af-8b59b4f322ee.png)
 
 ## Identidade Visual (Marca, Design)
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+Paleta de Cores utilizada:
 
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+![paleta_de_cores](https://user-images.githubusercontent.com/70529816/146293549-e0ac2a7d-f383-40f6-8aec-34c622f949e9.png)
 
 ## Conjunto de Slides (Estrutura)
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+Tópicos apresentados:
+
+ ![Overview_page](https://user-images.githubusercontent.com/70529816/146294189-75e05469-0105-47ec-a3ed-e4be56f9f32f.jpg)
