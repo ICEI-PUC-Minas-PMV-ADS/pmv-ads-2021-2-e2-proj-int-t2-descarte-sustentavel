@@ -1,12 +1,15 @@
-# TÍTULO DO PROJETO
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMA`
+
+# ![logoDescarteSustentavel](https://user-images.githubusercontent.com/70529816/146292766-9228208a-db92-4943-afc2-47816b42e9b0.png)
+
+
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
 `Projeto: Desenvolvimento de Aplicação Web Back-End` 
 
 `2º SEMESTRE`
 
-O referido projeto trata de uma ferramenta que possibilita resolver o problema da falta de informação sobre locais de coleta de recicláveis e eletrônicos bem como o descarte e destinação correto destes materiais.
+O referido projeto trata de uma ferramenta que possibilita resolver o problema da destinação incorreta dos materiais descartados, bem como da falta de informação sobre locais de coleta de resíduos recicláveis e eletrônicos.
 
 ## Integrantes
 
@@ -21,7 +24,7 @@ O referido projeto trata de uma ferramenta que possibilita resolver o problema d
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Compilar o projeto no localhost e utilizar.
 
 # Documentação
 
