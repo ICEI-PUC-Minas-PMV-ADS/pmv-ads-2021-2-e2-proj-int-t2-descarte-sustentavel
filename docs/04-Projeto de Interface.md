@@ -18,7 +18,7 @@ Conforme pode ser visto, a *Figura 5* mostra o diagrama de fluxo de interação 
 |Acompanhar solicitação de coleta|O usuário irá clicar em acompanhar solicitação o sistema vai veriificar se está logado se sim, será redirecionado para mostar status de coleta, mas se não estiver logado a página devera solicitar login e senha logo depois irá analisar se o email e senha são validos, a pagina devera esperar 5/s e solicitar login novamente| RF-001 || RF-003 || RF-005 |
 |Realizar baixa dos materiais coletados|O usuário devera clicar em realizar baixa dos materiais coletado na página home, então o sistema ira analisar se está logado se sim deverá mostar as coletas ativas e então podera selecionar as, coleta a serem baixadas logo depois irá atualizar a base de dados do sistema, mas se não estiver logado a página deverá solicitar login e senha logo depois irá analisar se o email e senha são validos, se não for valido a página irá esperar 5/s e solicitar login novamente| RF-001 || RF-003 || RF-011|
 
-  ![](https://user-images.githubusercontent.com/61097764/132771419-fcb564bc-8fae-477b-9143-f12b979a4a34.png)
+  ![](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2021-2-e2-proj-int-t2-descarte-sustentavel/blob/72c0c4883311a456302a18945e88a4e9455fe187/docs/img/Diagramas,%20Esquemas%20e%20Fluxogramas%20-%20Fluxo%20de%20Usu%C3%A1rio.png)
   Figura 5 – Diagrama de Fluxo de Usuário
 
 ## Wireframes
